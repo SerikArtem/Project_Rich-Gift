@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<url>
+		<loc>http://rich-gift.ru/</loc>
+		<lastmod>2015-10-22T14:58:19+03:00</lastmod>
+		<priority>1.00</priority>
+		<changefreq>weekly</changefreq>
+	</url>
+	<url>
+		<loc>http://rich-gift.ru/info_flowers.html</loc>
+		<lastmod>2015-10-22T14:58:19+03:00</lastmod>
+		<priority>0.90</priority>
+		<changefreq>weekly</changefreq>
+	</url>
+	<url>
+		<loc>http://rich-gift.ru/info_fruit.html</loc>
+		<lastmod>2015-10-22T14:58:19+03:00</lastmod>
+		<priority>0.90</priority>
+		<changefreq>weekly</changefreq>
+	</url>
+	<url>
+		<loc>http://rich-gift.ru/info_kinders.html</loc>
+		<lastmod>2015-10-22T14:58:19+03:00</lastmod>
+		<priority>0.90</priority>
+		<changefreq>weekly</changefreq>
+	</url>
+	<url>
+		<loc>http://rich-gift.ru/info_vegetables.html</loc>
+		<lastmod>2015-10-22T14:58:19+03:00</lastmod>
+		<priority>0.90</priority>
+		<changefreq>weekly</changefreq>
+	</url>
+</urlset>

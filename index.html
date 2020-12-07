@@ -1,0 +1,2567 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Rich-Gift | Подарки | Ростов-на-Дону</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name='yandex-verification' content='47c6b82eca938bd5' /> <!-- подтверждение прав на Яндексе -->
+<meta name="description" content="Компания Rich-Gift занимается изготовлением оригинальных подарков. В их число входят красиво украшенные подарочные боксы и корзины с фруктами и овощами, цветы, а также подарочные торты из Kinder-ов."/>
+<meta name="keywords" content="подарки, оригинальные подарки, необычные подарки, ростов-на-дону, корзины с фруктами, фруктовые корзины, корзины с овощами, фрукты в ростове, овощи в ростове, фрукты, овощи, kinder, киндер, торты из kinder, торты из киндеров"/>
+<meta property="og:title" content="Rich-Gift | Оригинальные подарки | Ростов-на-Дону">
+<meta property="og:type" content="website">	
+<meta property="og:url" content="http://rich-gift.ru">
+<meta property="og:image" content="http://rich-gift.ru/images/OpenGraph.jpg">
+<meta property="og:description" content="Компания Rich-Gift занимается изготовлением оригинальных подарков. В их число входят красиво украшенные подарочные боксы и корзины с фруктами и овощами, шикарные букет цветов, а также подарочные торты из Kinder-ов.">
+<link rel="icon" href="http://rich-gift.ru/favicon.ico" type="image/x-icon"/> <!-- Для всех браeзеров кроме IE -->
+<link rel="shortcut icon" href="http://rich-gift.ru/favicon.ico" type="image/x-icon"/><!-- Для IE -->
+<!-- Slider -->
+<link href="css/skitter.styles.min.css" type="text/css" media="all" rel="stylesheet"/>
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<!-- END Slider -->
+<link href='http://fonts.googleapis.com/css?family=Kelly+Slab&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Forum&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Yeseva+One&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto+Slab&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Poiret+One&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Forum&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<!-- JQuery -->
+<script type="text/javascript" language="javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" language="javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" language="javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" language="javascript" src="js/jquery.skitter.min.js"></script>
+<!-- END JQuery -->
+
+<!-- Плавная прокрутка скроллинга при переходе по якорям -->
+<script type="text/javascript">
+$(document).ready(function(){
+  $("#menu, #menu_2, #top_of_page").on("click","a", function (event) {
+    //отменяем стандартную обработку нажатия по ссылке
+    event.preventDefault();
+    //забираем идентификатор бока с атрибута href
+    var id  = $(this).attr('href'),
+    //узнаем высоту от начала страницы до блока на который ссылается якорь
+    top = $(id).offset().top;
+    //анимируем переход на расстояние - top за 1500 мс
+    $('body,html').animate({scrollTop: top}, 300);
+  });
+});
+</script>
+
+<!-- Режимы отображения меню при прокручивании страницы -->
+<script type="text/javascript">
+	var min = false;
+  var top_of_page = false;
+	$(document).scroll(function(){
+			if($(document).scrollTop()>50 && !min){
+				//изменение свойсва шапки
+				$("#menu_div_2").fadeIn(1000);
+				$("#menu_div_2_list").css('display','block');
+				min = true;//шапка в мини-режиме
+			}
+			if($(document).scrollTop()<=50 && min){
+				//изменение свойсва шапки
+				$("#menu_div_2").css('display','none');
+				$("#menu_div_2_list").css('display','none');
+				min = false;//шапка в обычном режиме
+			}
+
+      if($(document).scrollTop()>700 && !top_of_page){
+        $("#top_of_page").fadeIn(1000);
+        top_of_page = true;//Кнопка активна
+      }
+      if($(document).scrollTop()<=700 && top_of_page){
+        $("#top_of_page").fadeOut(1000);
+        top_of_page = false;//Кнопка скрыта
+      }
+
+	});
+</script>
+
+<!-- Настройки слайдера -->
+<script type="text/javascript" language="javascript">
+	$(document).ready(function() {
+		$('.box_skitter_large').skitter({
+			theme: 'clean',
+			numbers_align: 'right',
+			progressbar: true, 
+			dots: true, 
+			preview: true,
+			animation: 'showBars',
+			interval: 4000,
+			label: false,
+			width_label: '880px',
+			labelAnimation: 'left',
+			progressbar: true,
+      preview: false,
+			progressbar_css: {backgroundColor: '#000'},
+      with_animations: ['cubeRandom']
+			// with_animations: ['cube', 'cubeRandom', 'block', 'cubeStop', 'cubeHide', 'cubeSize', 'horizontal', 'showBars', 'showBarsRandom', 'tube', 'fade', 'fadeFour', 'paralell', 'blind', 'blindHeight', 'blindWidth', 'directionTop', 'directionBottom', 'directionRight', 'directionLeft', 'cubeStopRandom', 'cubeSpread', 'cubeJelly', 'glassCube', 'glassBlock', 'circles', 'circlesInside', 'circlesRotate', 'cubeShow', 'upBars', 'downBars', 'hideBars', 'swapBars', 'swapBarsBack', 'swapBlocks', 'cut', 'random', 'randomSmart']
+		});
+	});
+</script>
+
+ <!-- код для создание группы ретаргетинга в ВКонтакте -->
+<script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = location.protocol + '//vk.com/rtrg?r=m/AtsXKByqAyOdo89oZqycIQ2M0UOQs1nd/M7Pj6QtsFk9AdL*P/MNoSpfb7I/H8w225HImTiHqHNqUJpzq0SQ//aHt/RvWDm7in5HRa2TnqqHjnks1a6WehXgcIhYhG/LzBpTo2tAAUnhz3JRFtZEWgqRZZ8j4n3yVEDZfCvc4-';
+</script>
+
+</head>
+<body>
+<div id="main_div">
+	<!--Header-->
+	<div id="header_div">
+		<div id="closing_page"></div>
+		<div id="header_div_2">
+			<div id="logotip_div" class="header_blocks">
+				<a href="http://rich-gift.ru"><div id="logotip_div_2"><img src="images/Log.png"></div></a>
+			</div>
+			<div id="menu_div" class="header_blocks">
+				<ul id="menu">
+    			<li><a href="#home">Главная</a></li>
+					<li><a href="#why_we">Почему мы?</a></li>
+					<li><a href="#catalog">Каталог</a></li>
+					<li><a href="#order">Заказ</a></li>
+          <li><a href="#delivery">Доставка</a></li>
+					<li><a href="#about_us">О нас</a></li>
+					<li><a href="#reviews">Отзывы</a></li>
+					<li><a href="#contacts">Контакты</a></li>
+					<div style="clear:both;"></div>	
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="menu_div_2">
+		<div class="menu_div_2_float" id="menu_div_2_div1"><img src="images/menu_img.png"></div>
+		<div class="menu_div_2_float" id="menu_div_2_div2">МЕНЮ</div>
+		<div style="clear:both;"></div>	
+	</div>
+	<div id="menu_div_2_list">
+		<ul id="menu_2">
+    	<li><a href="#home">Главная</a></li>
+			<li><a href="#why_we">Почему мы?</a></li>
+			<li><a href="#catalog">Каталог</a></li>
+			<li><a href="#order">Заказ</a></li>
+      <li><a href="#delivery">Доставка</a></li>
+			<li><a href="#about_us">О нас</a></li>
+			<li><a href="#reviews">Отзывы</a></li>
+			<li><a href="#contacts">Контакты</a></li>
+		</ul>
+	</div>
+	<!--END Header-->
+
+  <!-- Кнопка "В начало страницы" -->
+  <div id="top_of_page">
+    <a href="#home"><img src="images/UpArrow.png" title="В начало страницы"></a>
+  </div>
+  <!-- END Кнопка "В начало страницы" -->
+
+	<div style="position:relative; top:-78px;"><a id="home"></a></div> <!--Якорь-->
+
+	<!--Slider-->
+	<div id="page">
+				<div class="box_skitter box_skitter_large">
+					<ul>
+						<li>
+							<a href="#cube"><img src="images/Slide_1.jpg" class="circles"/></a>
+							<div id="label_text_1" class="label_text"><p>Удивительные подарки для Вас! У нас лучшее качество и бесплатная доствака!</p></div>
+						</li>
+						<li>
+							<a href="#cube"><img src="images/Slide_2.jpg" class="circles"/></a>
+							<div class="label_text"><p>Удивительные подарки для Вас! У нас лучшее качество и бесплатная доствака!</p></div>
+						</li>
+            <li>
+              <a href="#cube"><img src="images/Slide_3.jpg" class="circles"/></a>
+              <div class="label_text"><p>Удивительные подарки для Вас! У нас лучшее качество и бесплатная доствака!</p></div>
+            </li>
+					</ul>
+				</div>
+  </div>
+  <!--END_Slider-->
+
+    <div style="position:relative; top:-20px;"><a id="why_we"></a></div> <!--Якорь-->
+  	<!-- Why are we? -->
+  	<div id="why_are_we_div">
+  		<div id="WAW_header1">
+  			<div id="WAW_header2">
+	  			<div id="WAW_line1" class="WAW_line_float"></div>
+	  			<div id="WAW_header_text" class="WAW_line_float">Почему мы?</div>
+	  			<div id="WAW_line2" class="WAW_line_float"></div>
+	  			<div style="clear:both;"></div>
+  			</div>	
+  		</div>
+
+  		<div id="WAW_content">
+  			<div class="WAWC_row1_2">
+  				<div class="WAWCR1_block_float WAWCR1_block">
+  					<div class="WAWCR1B_img"><img src="images/waw_1.png"></div>
+  					<div class="WAWCR1B_text">Быстрота обслуживания клиентов!</div>
+  				</div>
+  				<div class="WAWCR1_block_float WAWCR1_block">
+  					<div class="WAWCR1B_img"><img src="images/waw_2.png"></div>
+  					<div class="WAWCR1B_text">Лучшее соотношение "Цена-Качество"!</div>
+  				</div>
+  				<div class="WAWCR1_block_float WAWCR1_block">
+  					<div class="WAWCR1B_img"><img src="images/waw_3.png"></div>
+  					<div class="WAWCR1B_text">Бесплатная и быстрая доствка!</div>
+  				</div>
+  				<div class="WAWCR1_block_float WAWCR1_block">
+  					<div class="WAWCR1B_img"><img src="images/waw_4.png"></div>
+  					<div class="WAWCR1B_text">Особый подход <br/>к каждому клиенту!</div>
+  				</div>
+  				<div style="clear:both;"></div>
+  			</div>
+  			<div class="WAWC_row1_2">
+  				<div class="WAWCR1_block_float WAWCR1_block">
+  					<div class="WAWCR1B_img"><img src="images/waw_5.png"></div>
+  					<div class="WAWCR1B_text">Гарантия возврата денег!</div>
+  				</div>
+  				<div class="WAWCR1_block_float WAWCR1_block">
+  					<div class="WAWCR1B_img"><img src="images/waw_6.png"></div>
+  					<div class="WAWCR1B_text">Работаем круглосуточно и без выходных!</div>
+  				</div>
+  				<div class="WAWCR1_block_float WAWCR1_block">
+  					<div class="WAWCR1B_img"><img src="images/waw_7.png"></div>
+  					<div class="WAWCR1B_text">100% гарантия качества!</div>
+  				</div>
+  				<div class="WAWCR1_block_float WAWCR1_block">
+  					<div class="WAWCR1B_img"><img src="images/waw_8.png"></div>
+  					<div class="WAWCR1B_text">Возможность оплаты при получении заказа!</div>
+  				</div>
+  				<div style="clear:both;"></div>
+  			</div>
+  		</div>
+  	</div>
+  	<!-- END Why are we? -->
+
+    <div style="position:relative; top:0px;"><a id="catalog"></a></div> <!--Якорь-->
+  	<!--Catalog-->
+  	<div id="fon_catalog">
+  		<div id="header1_catalog">
+  			<div id="header2_catalog">
+	  			<div id="line1_header_catalog" class="float_catalog_line"></div>
+	  			<div id="text_header_catalog" class="float_catalog_line">Каталог</div>
+	  			<div id="line2_header_catalog" class="float_catalog_line"></div>
+	  			<div style="clear:both;"></div>
+  			</div>
+  		</div>
+
+  		<div id="content_catalog">
+  			<div class="row_catalog">
+  				<div class="float_block_C block_catalog">
+  					<div class="elem1_BC">Фруктовый рай</div>
+  					<div class="elem2_BC"><img src="images/img1_catalog.png"></div>
+  					<div class="elem3_BC elem_float_BC">3499 руб.</div>
+  					<div class="elem4_BC elem_float_BC"><a href="#modal1" class="button_BC open_modal">Подробнее</a></div>
+  					<div style="clear:both;"></div>
+  				</div>
+  				<div class="float_block_C block_catalog">
+  					<div class="elem1_BC">Сладкая жизнь (mini)</div>
+  					<div class="elem2_BC"><img src="images/img2_catalog.png"></div>
+  					<div class="elem3_BC elem_float_BC">2399 руб.</div>
+  					<div class="elem4_BC elem_float_BC"><a href="#modal2" class="button_BC open_modal">Подробнее</a></div>
+  					<div style="clear:both;"></div>
+  				</div>
+  				<div class="float_block_C block_catalog">
+  					<div class="elem1_BC">Сладкая жизнь (maxi)</div>
+  					<div class="elem2_BC"><img src="images/img2_catalog.png"></div>
+  					<div class="elem3_BC elem_float_BC">3199 руб.</div>
+  					<div class="elem4_BC elem_float_BC"><a href="#modal3" class="button_BC open_modal">Подробнее</a></div>
+  					<div style="clear:both;"></div>
+  				</div>
+  				<div style="clear:both;"></div>
+  			</div>
+  			<div class="row_catalog">
+  				<div class="float_block_C block_catalog">
+  					<div class="elem1_BC">Овощное наслаждение</div>
+  					<div class="elem2_BC"><img src="images/img3_catalog.png"></div>
+  					<div class="elem3_BC elem_float_BC">3199 руб.</div>
+  					<div class="elem4_BC elem_float_BC"><a href="#modal4" class="button_BC open_modal">Подробнее</a></div>
+  					<div style="clear:both;"></div>
+  				</div>
+  				<div class="float_block_C block_catalog">
+  					<div class="action1_BC">АКЦИЯ</div>
+  					<div class="elem1_BC dop1_elem1_BC">Fruit Box (summer)</div>
+  					<div class="elem2_BC"><img src="images/img5_catalog.png"></div>
+  					<div class="elem3_BC elem_float_BC">2999 руб.</div>
+  					<div class="elem4_BC elem_float_BC"><a href="#modal5" class="button_BC open_modal">Подробнее</a></div>
+  					<div style="clear:both;"></div>
+  				</div>
+  				<div class="float_block_C block_catalog">
+  					<div class="elem1_BC">Love Story</div>
+  					<div class="elem2_BC"><img src="images/img4_catalog.png"></div>
+  					<div class="elem3_BC elem_float_BC">2099 руб.</div>
+  					<div class="elem4_BC elem_float_BC"><a href="#modal6" class="button_BC open_modal">Подробнее</a></div>
+  					<div style="clear:both;"></div>
+  				</div>
+  				<div style="clear:both;"></div>
+  			</div>
+  			<div class="row_catalog">
+  				<div class="float_block_C block_catalog">
+  					<div class="elem1_BC">Плюшевая сказка (blue)</div>
+            <div class="elem2_BC"><img src="images/img7_catalog.png"></div>
+            <div class="elem3_BC elem_float_BC">1799 руб.</div>
+            <div class="elem4_BC elem_float_BC"><a href="#modal7" class="button_BC open_modal">Подробнее</a></div>
+            <div style="clear:both;"></div>
+  				</div>
+  				<div class="float_block_C block_catalog">
+  					<div class="elem1_BC">Плюшевая сказка (red)</div>
+            <div class="elem2_BC"><img src="images/img8_catalog.png"></div>
+            <div class="elem3_BC elem_float_BC">1799 руб.</div>
+            <div class="elem4_BC elem_float_BC"><a href="#modal8" class="button_BC open_modal">Подробнее</a></div>
+            <div style="clear:both;"></div>
+  				</div>
+  				<div class="float_block_C block_catalog">
+  					<div class="elem1_BC">Плюшевая сказка (violet)</div>
+            <div class="elem2_BC"><img src="images/img9_catalog.png"></div>
+            <div class="elem3_BC elem_float_BC">1799 руб.</div>
+            <div class="elem4_BC elem_float_BC"><a href="#modal9" class="button_BC open_modal">Подробнее</a></div>
+            <div style="clear:both;"></div>
+  				</div>
+  				<div style="clear:both;"></div>
+  			</div>
+  			<div class="row_catalog">
+  				<div class="float_block_C block_catalog">
+  				  <div class="elem1_BC">Фруктовые фантазии</div>
+            <div class="elem2_BC"><img src="images/img10_catalog.png"></div>
+            <div class="elem3_BC elem_float_BC">2599 руб.</div>
+            <div class="elem4_BC elem_float_BC"><a href="#modal10" class="button_BC open_modal">Подробнее</a></div>
+            <div style="clear:both;"></div>
+  				</div>
+  				<div class="float_block_C block_catalog">
+  					<div class="elem1_BC">Карнавал вкуса</div>
+            <div class="elem2_BC"><img src="images/img11_catalog.png"></div>
+            <div class="elem3_BC elem_float_BC">1999 руб.</div>
+            <div class="elem4_BC elem_float_BC"><a href="#modal11" class="button_BC open_modal">Подробнее</a></div>
+            <div style="clear:both;"></div>
+  				</div>
+  				<div class="float_block_C block_catalog">
+  					<div class="elem1_BC">Fruit Box (winter)</div>
+            <div class="elem2_BC"><img id="img11_catalog" src="images/img12_catalog.png"></div>
+            <div class="elem3_BC elem_float_BC">2399 руб.</div>
+            <div class="elem4_BC elem_float_BC"><a href="#modal12" class="button_BC open_modal">Подробнее</a></div>
+            <div style="clear:both;"></div>
+  				</div>
+  				<div style="clear:both;"></div>
+  			</div>
+        <div class="row_catalog">
+          <div class="float_block_C block_catalog">
+            <div class="elem1_BC">Сладкие грёзы</div>
+            <div class="elem2_BC"><img src="images/img13_catalog.png"></div>
+            <div class="elem3_BC elem_float_BC">1999 руб.</div>
+            <div class="elem4_BC elem_float_BC"><a href="#modal13" class="button_BC open_modal">Подробнее</a></div>
+            <div style="clear:both;"></div>
+          </div>
+          <div class="float_block_C block_catalog">
+            <div class="elem1_BC">Сладкий этюд</div>
+            <div class="elem2_BC"><img src="images/img14_catalog.png"></div>
+            <div class="elem3_BC elem_float_BC">3449 руб.</div>
+            <div class="elem4_BC elem_float_BC"><a href="#modal14" class="button_BC open_modal">Подробнее</a></div>
+            <div style="clear:both;"></div>
+          </div>
+          <div class="float_block_C block_catalog">
+            <div class="elem1_BC">Сказочный бал</div>
+            <div class="elem2_BC">
+              <img id="img15_cat" src="images/img15_catalog.png">
+              <img id="img15_1_cat" src="images/img15_1_catalog.png">
+            </div>
+            <div class="elem3_BC elem_float_BC">1999 руб.</div>
+            <div class="elem4_BC elem_float_BC"><a href="#modal15" class="button_BC open_modal">Подробнее</a></div>
+            <div style="clear:both;"></div>
+          </div>
+          <div style="clear:both;"></div>
+        </div>
+  			<div class="row_catalog">
+  				<div class="float_block_C block_catalog">
+            <div class="action1_BC">АКЦИЯ</div>
+            <div class="elem1_BC dop1_elem1_BC">Особый случай</div>
+            <div class="elem2_BC"><img src="images/img16_catalog.png"></div>
+            <div class="elem3_BC elem_float_BC">8799 руб.</div>
+            <div class="elem4_BC elem_float_BC"><a href="#modal16" class="button_BC open_modal">Подробнее</a></div>
+            <div style="clear:both;"></div>
+          </div>
+  				<div class="float_block_C block_catalog">
+  					<div class="elem1_BC">Царский подарок</div>
+            <div class="elem2_BC"><img src="images/img17_catalog.png"></div>
+            <div class="elem3_BC elem_float_BC">17999 руб.</div>
+            <div class="elem4_BC elem_float_BC"><a href="#modal17" class="button_BC open_modal">Подробнее</a></div>
+            <div style="clear:both;"></div>
+  				</div>
+  				<div class="float_block_C block_catalog">
+  					<div class="elem1_BC">Тайное свидание</div>
+            <div class="elem2_BC"><img src="images/img18_catalog.png"></div>
+            <div class="elem3_BC elem_float_BC">4849 руб.</div>
+            <div class="elem4_BC elem_float_BC"><a href="#modal18" class="button_BC open_modal">Подробнее</a></div>
+            <div style="clear:both;"></div>
+  				</div>
+  				<div style="clear:both;"></div>
+  			</div>
+  			<div class="row_catalog">
+  				<div class="float_block_C block_catalog">
+  					<div class="elem1_BC">Сердце ангела</div>
+            <div class="elem2_BC"><img src="images/img19_catalog.png"></div>
+            <div class="elem3_BC elem_float_BC">10999 руб.</div>
+            <div class="elem4_BC elem_float_BC"><a href="#modal19" class="button_BC open_modal">Подробнее</a></div>
+            <div style="clear:both;"></div>
+  				</div>
+  				<div class="float_block_C block_catalog">
+  					<div class="elem1_BC">Палитра любви</div>
+            <div class="elem2_BC"><img src="images/img20_catalog.png"></div>
+            <div class="elem3_BC elem_float_BC">8749 руб.</div>
+            <div class="elem4_BC elem_float_BC"><a href="#modal20" class="button_BC open_modal">Подробнее</a></div>
+            <div style="clear:both;"></div>
+  				</div>
+  				<div class="float_block_C block_catalog">
+  					<div class="elem1_BC">Розовая мечта</div>
+            <div class="elem2_BC"><img src="images/img21_catalog.png"></div>
+            <div class="elem3_BC elem_float_BC">2599 руб.</div>
+            <div class="elem4_BC elem_float_BC"><a href="#modal21" class="button_BC open_modal">Подробнее</a></div>
+            <div style="clear:both;"></div>
+  				</div>
+  				<div style="clear:both;"></div>
+  			</div>
+  		</div>
+	</div>
+	<!--END Catalog-->
+
+  <div style="position:relative; top:0px;"><a id="order"></a></div> <!--Якорь-->
+	<!--Order-->
+	<div id="order_div">
+		<div id="header1_Order">
+			<div id="header2_Order">
+	  			<div id="line1_header_Order" class="float_Order_line"></div>
+	  			<div id="text_header_Order" class="float_Order_line">Заказ</div>
+	  			<div id="line2_header_Order" class="float_Order_line"></div>
+	  			<div style="clear:both;"></div>
+  			</div>
+  		</div>
+		<div id="order_div_content">
+
+			<form method="POST" id="form_order" name="form_order">
+        <div id="block1_order" class="float_block_order">
+          <div id="info1_order">Поля отмеченные <span>*</span> обязательны для заполнения!</div>
+          <div><span>*</span> <input type="text" id="text1_order" placeholder="Введите имя..."></div>
+          <div><span>*</span> <input type="text" id="text2_order" placeholder="Введите телефон..."></div>
+                  
+          <div id="PoleProduct_order">
+            <div id="arrow_order">
+              <img src="images/ArrowOrder.png">
+            </div>
+            <div id="div_butt_order">
+              <input type="button" value="Выбор товаров" id="butt_product_order" onclick="return SelectProduct();">
+            </div>
+            <div id="SelectPO">
+              <div class="stylePO" onclick="return AddProduct('prod1');">
+                <img src="images/prod1_order.png">
+                <div>Фруктовый рай</div>
+              </div>
+              <div style="clear:both;"></div>
+
+              <div class="stylePO" onclick="return AddProduct('prod2');">
+                <img src="images/prod2_order.png">
+                <div>Сладкая жизнь (mini)</div>
+              </div>
+              <div style="clear:both;"></div>
+
+              <div class="stylePO" onclick="return AddProduct('prod3');">
+                <img src="images/prod3_order.png">
+                <div>Сладкая жизнь (maxi)</div>
+              </div>
+              <div style="clear:both;"></div>
+
+              <div class="stylePO" onclick="return AddProduct('prod4');">
+                <img src="images/prod4_order.png">
+                <div>Овощное наслаждение</div>
+              </div>
+              <div style="clear:both;"></div>
+
+              <div class="stylePO" onclick="return AddProduct('prod5');">
+                <img src="images/prod5_order.png">
+                <div>Fruit Box (summer)</div>
+              </div>
+              <div style="clear:both;"></div>
+
+              <div class="stylePO" onclick="return AddProduct('prod6');">
+                <img src="images/prod6_order.png">
+                <div>Love Story</div>
+              </div>
+              <div style="clear:both;"></div>
+
+              <div class="stylePO" onclick="return AddProduct('prod7');">
+                <img src="images/prod7_order.png">
+                <div>Плюшевая сказка (blue)</div>
+              </div>
+              <div style="clear:both;"></div>
+
+              <div class="stylePO" onclick="return AddProduct('prod8');">
+                <img src="images/prod8_order.png">
+                <div>Плюшевая сказка (red)</div>
+              </div>
+              <div style="clear:both;"></div>
+
+              <div class="stylePO" onclick="return AddProduct('prod9');">
+                <img src="images/prod9_order.png">
+                <div>Плюшевая сказка (violet)</div>
+              </div>
+              <div style="clear:both;"></div>
+
+              <div class="stylePO" onclick="return AddProduct('prod10');">
+                <img src="images/prod10_order.png">
+                <div>Фруктовые фантазии</div>
+              </div>
+              <div style="clear:both;"></div>
+
+              <div class="stylePO" onclick="return AddProduct('prod11');">
+                <img src="images/prod11_order.png">
+                <div>Карнавал вкуса</div>
+              </div>
+              <div style="clear:both;"></div>
+
+              <div class="stylePO" onclick="return AddProduct('prod12');">
+                <img src="images/prod12_order.png">
+                <div>Fruit Box (winter)</div>
+              </div>
+              <div style="clear:both;"></div>
+
+              <div class="stylePO" onclick="return AddProduct('prod13');">
+                <img src="images/prod13_order.png">
+                <div>Сладкие грёзы</div>
+              </div>
+              <div style="clear:both;"></div>
+
+              <div class="stylePO" onclick="return AddProduct('prod14');">
+                <img src="images/prod14_order.png">
+                <div>Сладкий этюд</div>
+              </div>
+              <div style="clear:both;"></div>
+
+              <div class="stylePO" onclick="return AddProduct('prod15');">
+                <img src="images/prod15_order.png">
+                <div>Сказочный бал</div>
+              </div>
+              <div style="clear:both;"></div>
+
+              <div class="stylePO" onclick="return AddProduct('prod16');">
+                <img src="images/prod16_order.png">
+                <div>Особый случай</div>
+              </div>
+              <div style="clear:both;"></div>
+
+              <div class="stylePO" onclick="return AddProduct('prod17');">
+                <img src="images/prod17_order.png">
+                <div>Царский подарок</div>
+              </div>
+              <div style="clear:both;"></div>
+
+              <div class="stylePO" onclick="return AddProduct('prod18');">
+                <img src="images/prod18_order.png">
+                <div>Тайное свидание</div>
+              </div>
+              <div style="clear:both;"></div>
+
+              <div class="stylePO" onclick="return AddProduct('prod19');">
+                <img src="images/prod19_order.png">
+                <div>Сердце ангела</div>
+              </div>
+              <div style="clear:both;"></div>
+
+              <div class="stylePO" onclick="return AddProduct('prod20');">
+                <img src="images/prod20_order.png">
+                <div>Палитра любви</div>
+              </div>
+              <div style="clear:both;"></div>
+
+              <div class="stylePO" onclick="return AddProduct('prod21');">
+                <img src="images/prod21_order.png">
+                <div>Розовая мечта</div>
+              </div>
+              <div style="clear:both;"></div>
+
+            </div>
+            <div id="info4_order">Здесь будет отображаться список всех товаров при нажатии на кнопку "Выбор товаров".</div>
+          </div>
+        </div>
+        <div id="block2_order" class="float_block_order">
+          <div id="info2_order">Необходимый товар можно также заказать с раздела "Каталог", кликнув по кнопке "Подробнее" на конкретном товаре.</div>
+          <div id="info3_order">Заказ будет готов в течение суток!</div>
+          <div id="ContentPO">
+            <div id="info5_order">Здесь будет отображаться список выбранных вами товаров. Для того чтобы выбрать товар необходимо воспользоваться окном "Выбор товаров".</div>
+          </div>
+          <button id="batt_calculate_cost" onclick="return CountingTheCost();">Посчитать стоимость</button>
+          <div id="TotalCost_inOrder"></div>
+          <div style="clear:both;"></div>
+        </div>
+        <div style="clear:both;"></div>
+
+        <div><textarea id="textarea_order" placeholder="Пожелание к заказу или предложение идеи своего товара..."></textarea></div>
+  
+        <div class="input_button_style float_file_order">
+          <div class="input_font_style">Прикрепить изображение</div>
+          <input type="file" name="file[]" id="file" class="input_input_style">
+        </div>
+        <div id="namefile" class="float_file_order"></div>
+        <div style="clear:both;"></div>
+        <div id="div_info6_order">
+          <div id="info6_order">Ваш заказ принят! Мы свяжемся с Вами в ближайшее время...</div>
+        </div>
+        <img id="animation_load" src="images/animation_load.gif">
+        <button id="batt_sendFormOrder" onclick="return SendData_FormOrder();">ЗАКАЗАТЬ</button>
+      </form>
+
+		</div>
+	</div>
+	<!--END Order-->
+
+  <div style="position:relative; top:0px;"><a id="delivery"></a></div> <!--Якорь-->
+  <!-- Delivery -->
+  <div id="Delivery_div">
+    <div id="header1_Delivery">
+      <div id="header2_Delivery">
+        <div id="line1_header_Delivery" class="float_Delivery_line"></div>
+        <div id="text_header_Delivery" class="float_Delivery_line">Доставка</div>
+        <div id="line2_header_Delivery" class="float_Delivery_line"></div>
+        <div style="clear:both;"></div>
+      </div>
+    </div>
+    <div id="content_Delivery">
+      <div class="block1_Delivery float_Delivery">
+        <div id="text1_Delivery">
+          <b>Бесплатная</b> доставка по городам: Ростов-на-Дону, Аксай, Новочеркасск, Азов, Батайск.
+        </div>
+        <div id="info1_Delivery">
+          Возможен самовывоз по адресу: Ростов-на-Дону, ул.Зорге, д.33. 
+        </div>
+      </div>
+      <div class="block2_Delivery float_Delivery">
+        <div id="text2_Delivery">
+          Возможности оплаты: <br/> 1. Наличный расчёт при получении заказа.<br/> 2. Безналичный расчёт на карту "Сбербанк" (4276520013025081).<br/> 3. Онлайн платёж на Яндекс.Деньги (41001871621803).
+        </div>
+      </div>
+      <div style="clear:both;"></div>
+      <div class="block3_Delivery">
+        <img src="images/car_Delivery.png">
+      </div>
+    </div>
+  </div>
+  <!-- END Delivery -->
+
+  <div style="position:relative; top:0px;"><a id="about_us"></a></div> <!--Якорь-->
+	<!--About_Us-->
+	<div id="About_Us_div">
+		<div id="header1_About_Us">
+  			<div id="header2_About_Us">
+	  			<div id="line1_header_About_Us" class="float_About_Us_line"></div>
+	  			<div id="text_header_About_Us" class="float_About_Us_line">О нас</div>
+	  			<div id="line2_header_About_Us" class="float_About_Us_line"></div>
+	  			<div style="clear:both;"></div>
+  			</div>
+  		</div>
+		<div id="content_About_Us">
+			<div id="block_1_About_Us">
+				Уважаемый посетитель сайта, представляем вашему вниманию сайт-каталог <b>Rich-Gift</b>. Мы специализируемся на изготовлении подарочных боксов с фруктами и корзин с фруктами, боксов с овощами и корзин с овощами, различных тортов из киндеров и шикарных букетов цветов. Любое торжество не может обойтись без подарков, и порой так сложно определиться, что же подарить?! Этот вопрос остается проблемой для большинства людей. Наши оригинальные подарки могут не просто решить данную проблему, но и доставить удовольствие и пользу получателю подарка.
+			</div>
+			<div id="block_2_About_Us">
+				<div id="block_2_About_Us_text">
+					Корзина или бокс со спелыми, полными витаминов фруктами придется по вкусу каждому и идеально подойдет как в качестве подарка деловому партнеру, так и как знак внимания для Ваших близких людей. Корзина или бокс может состоять из различных сортов винограда, ананасов, апельсинов, помело, мандаринов, яблок, бананов, гранатов, персиков, груш, манго, кокосов, клубники, лимонов, грейпфрутов, киви и других фруктов.
+				</div>
+				<a class="batt_about_us" id="batt1_about_us" href="http://rich-gift.ru/info_fruit.html">Подробнее..</a>
+			</div>
+
+			<div style="clear:both;"></div>
+			<div id="block_3_About_Us">
+				<div id="block_3_About_Us_text">
+					Корзина или бокс с сочными овощами, полна витаминов, в которых человек нуждается в любое время года. Подарить корзину или бокс со свежими овощами – один из лучших способов показать своё уважение и заботу Вашему близкому человеку. Ассортимент корзины или бокса может быть разнообразным: цветная капуста, пекинская капуста, кольраби, помидоры, баклажаны, перец, огурцы, морковь, чеснок, различные виды зелени и многое другое.
+				</div>
+				<a class="batt_about_us" id="batt2_about_us" href="http://rich-gift.ru/info_vegetables.html">Подробнее..</a>
+			</div>
+			<div id="block_4_About_Us">
+				<div id="block_4_About_Us_text">
+					Торты из киндеров могут стать отличным подарком для каждого. Ведь подарив человеку шоколад, вы также подарите ему много радости и хорошего настроения. Киндеры в их оригинальном оформлении сделают любой праздник немного ярче. Подарите сладкое сердце своей второй половинке, удивите необычным тортом из киндеров ребенка или дорогого вам человека. Такой подарок станет необычным украшением любого праздничного стола.
+				</div>
+				<a class="batt_about_us" id="batt3_about_us" href="http://rich-gift.ru/info_kinders.html">Подробнее..</a>
+			</div>
+			<div style="clear:both;"></div>
+			<div id="block_5_About_Us">
+				<div id="block_5_About_Us_text">
+					Если вы не знаете, что подарить человеку, дарите цветы – не ошибетесь. А если это будут оригинальные букеты из роз, то вы несомненно сделаете человека счастливее. 21 роза, 51 роза, 101 роза, 201 роза или 301 роза – количество выбираете сами. Главное, что такой подарок будет наполнять чудесным ароматом комнату человека на протяжение долгого времени и радовать его каждое утро. Парням на заметку: букет из роз – лучший способ попросить у девушки прощения.
+				</div>
+				<a class="batt_about_us" id="batt4_about_us" href="http://rich-gift.ru/info_flowers.html">Подробнее..</a>
+			</div>
+			<div id="block_6_About_Us">
+				Наш подарок оригинально оформлен по вашему вкусу, красив и обладает ещё одним важным достоинством – он съедобен! А наши букеты цветов сделают Ваш праздник ещё ярче и красивее, а также подарят прекрасное настроение! 
+			</div>
+			<div style="clear:both;"></div>
+   		</div>
+	</div>
+	<!--END About_Us-->
+
+  <div style="position:relative; top:0px;"><a id="reviews"></a></div> <!--Якорь-->
+	<!-- Reviews -->
+	<div id="reviews_div">
+		<div id="header1_Reviews">
+  			<div id="header2_Reviews">
+	  			<div id="line1_header_Reviews" class="float_Reviews_line"></div>
+	  			<div id="text_header_Reviews" class="float_Reviews_line">Отзывы</div>
+	  			<div id="line2_header_Reviews" class="float_Reviews_line"></div>
+				<div style="clear:both;"></div>
+	  		</div>
+  		</div>
+  		<div id="reviews_content">
+
+  		  <div class="div_RC">
+          <div class="img_div_RC float_RC">
+            <img src="images/img1_reviews.png">
+          </div>
+          <div class="content_div_RC float_RC">
+            <div class="name_CORC">
+              Оксана, 23 года. Ростов-на-Дону. 
+            </div>
+            <div class="date_CORC">
+              6 августа 2015г.
+            </div>
+            <div class="text_CORC">
+              Очень долго искала, что подарить мамочке на День Рождения. Ну вот что можно подарить человеку, у которго есть практически всё?! Каким-то чудным образом нашла этот интернет-магазин и решила заказать фруктовый бокс. Счастью не было предела, фруктики пришли отличные, большие, свежие, в общем и я и мама остались в восторге! 
+            </div>
+          </div>
+          <div style="clear:both;"></div>
+        </div>
+
+        <div class="div_RC">
+          <div class="content_div_RC float_RC">
+            <div class="name_CORC">
+              Владимир, 28 лет. Новочеркасск.
+            </div>
+            <div class="date_CORC">
+              17 октября 2015г.
+            </div>
+            <div class="text_CORC">
+              Сделал заказ на торт из киндеров. Уже через 15 минут мне позвонили, уточнили все детали. Заказ пришёл быстро, доставка была как и обещали бесплатная, качество торта отличное. С удовольствием заказал бы ещё что нибудь.
+            </div>
+          </div>
+          <div class="img_div_RC float_RC">
+            <img src="images/img2_reviews.png">
+          </div>
+          <div style="clear:both;"></div>
+        </div>
+
+        <div class="div_RC">
+          <div class="img_div_RC float_RC">
+            <img src="images/img3_reviews.png">
+          </div>
+          <div class="content_div_RC float_RC">
+            <div class="name_CORC">
+              Виктория, 32 года. Батайск.
+            </div>
+            <div class="date_CORC">
+              28 ноября 2015г.
+            </div>
+            <div class="text_CORC">
+              Заказала бабушке на 70-ти летие овощную корзину, заказ попросила привезти 26 числа, мне всё привезли вовремя. Овощи все хорошие, в жизни корзина получилась даже больше, чем на фото. Дедушка попросил подарить ему такую же корзину.  
+            </div>
+          </div>
+          <div style="clear:both;"></div>
+        </div>
+
+
+  		</div>
+	</div>
+	<!-- END Reviews -->
+	
+  <div style="position:relative; top:0px;"><a id="contacts"></a></div> <!--Якорь-->
+	<!--Contacts-->
+	<div id="contacts_div">
+		<div id="header1_Contacts">
+  			<div id="header2_Contacts">
+	  			<div id="line1_header_Contacts" class="float_Contacts_line"></div>
+	  			<div id="text_header_Contacts" class="float_Contacts_line">Контакты</div>
+	  			<div id="line2_header_Contacts" class="float_Contacts_line"></div>
+				<div style="clear:both;"></div>
+	  		</div>
+  		</div>
+		<div id="content_contacts">
+			<div id="left_div_C" class="left_right_div_C">
+				<div id="address_C"><b>Адрес:</b> Ростов-на-Дону, Батайск</div>
+				<div id="phone1_C"><b>Телефоны:</b> +7(928)212-10-40</div>
+				<div id="phone2_C">+7(950)8-690-690</div>
+				<div id="e-mail_C"><b>E-mail:</b> rich-gift2015@yandex.ru</div>
+				<div id="header_ip_name_C"><b>Свидетельство гос. регистрации:</b></div>
+				<div id="ip_name_C">ИП Яблокова Т.В.</div>
+				<div id="ip_number_C">ОГРН 307443729800026</div>
+				<div>
+					<div id="head_social_C"><b>Мы в социальных сетях:</b></div>
+					<div id="socialNetworkContacts">
+						<a onclick="err();" target="_blank"><div class="log_SNC" id="vk_contacts" title="ВКонтакте"></div></a>
+						<a onclick="err();" target="_blank"><div class="log_SNC" id="instagram_contacts" title="Instagram"></div></a>
+						<!-- <a href="#" target="_blank"><div class="log_SNC" id="ok_contacts" title="Одноклассники"></div></a> -->
+					</div>
+				</div>
+				<div style="clear:both;"></div>
+			</div>
+			<div id="right_div_contacts" class="left_right_div_C">
+				<!--Информационное поле-->
+				<div id="info_about_form_contacts"><img src="images/info.png">&nbsp;&nbsp;&nbsp;Задайте нам вопрос, воспользовавшись формой ниже. Все поля являются обязательными для заполнения.</div>
+
+				<input id="name_client_FC" class="name_e-mail_FC" type="text" placeholder="Введите имя..." value=""/><br>
+				<input id="e-mail_client_FC" class="name_e-mail_FC" type="text" placeholder="Введите e-mail..." value=""/><br>
+				<textarea id="text_client_FC" placeholder="Введите сообщение..."></textarea>
+				<div id="text_message_FC_dop" class="message_button_FC"><div id="text_message_FC">Ваше сообщение отправлено. Мы ответим Вам в ближайшее время..</div></div>
+				<div class="message_button_FC"><input type="button" id="button_FC"  onclick="Send_Data_From_Form_in_Contacts()" value="Отправить"/></div>
+				<div style="clear:both;"></div>
+			</div>
+			<div style="clear:both;"></div>
+		</div>
+
+		<div id="footer_div">
+			<div id="counter_Yandex">
+				<!-- Yandex.Metrika informer --><a href="https://metrika.yandex.ru/stat/?id=33226693&amp;from=informer"target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/33226693/3_1_202020FF_000000FF_1_pageviews"style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" onclick="try{Ya.Metrika.informer({i:this,id:33226693,lang:'ru'});return false}catch(e){}" /></a><!-- /Yandex.Metrika informer --> <!-- Yandex.Metrika counter --><script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter33226693 = new Ya.Metrika({ id:33226693, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="https://mc.yandex.ru/watch/33226693" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+			</div>
+			<div id="dop_footer_div">
+				<div id="copyright_div">Дизайн и разработка сайта: <a href="http://vk.com/id169298812" target="_blank">Серик Артем</a></div>
+				<a href="#PrivacyPolicy" id="linc_privacy_policy" class="open_modal">Политика конфиденциальности</a>
+				<div id="developer_div">Все права защищены. &copy;2014-2016, <a href="http://rich-gift.ru">rich-gift.ru</a></div>
+			</div>
+			<div style="clear:both;"></div>
+		</div>
+	</div>
+	<!--END Contacts-->
+</div>
+
+<!-- Сбор и отправка данных на сервер с формы заказа в разделе "Заказ" -->
+<script type="text/javascript">
+  //Очистка сессии при перезагрузки страницы
+  $.ajax({
+    type: "POST",
+    url: "php/session_destroy.php"
+  });
+
+  // Вывод блока для выбора товаров
+  $('#SelectPO').hide();
+  function SelectProduct(){
+    $('#SelectPO').slideToggle(200);
+    return false;
+  }
+
+  //Добавление выбранного товара в разделе "Заказ"
+  function AddProduct(product){
+    var contentAddProd = document.getElementById("ContentPO");
+    $("#info5_order").css('display','none');
+    $.ajax({
+        type: "POST",
+        url: "php/AddProduct_inOrder.php",
+        data: "&id_product="+product,
+        
+        success: function(data) {
+          $("#ContentPO").append(data);
+          //Прокрутка скроллинга в самый низ
+          contentAddProd.scrollTop = contentAddProd.scrollHeight;
+        }
+    }); 
+    return false;
+  }
+
+  //Удаление выбранного товара в разделе "Заказ"
+  function RemoveProduct(r_product){
+    $.ajax({
+        type: "POST",
+        url: "php/RemoveProduct_inOrder.php",
+        data: "&r_productID="+r_product,
+        
+        success: function(data) {
+          $("#ContentPO").append(data);
+        }
+    }); 
+    $.ajax({
+        type: "POST",
+        url: "php/CheckEmptySession_inOrder.php",
+        
+        success: function(data) {
+          if(data == '0'){
+            //alert("Массив пуст!");
+            $("#info5_order").css('display','block');
+          }
+        }
+    }); 
+    return false;
+  }
+
+  //Ручное изменение значений текстовых полей кол-ва товаров в разделе "Заказ" 
+  function ChangeText(t_product){
+    var valText = $("#T"+t_product+"_count").val();
+    $.ajax({
+        type: "POST",
+        url: "php/ChangeText_inOrder.php",
+        data: "&t_productID="+t_product+"&valText="+valText
+    }); 
+    return false;
+  }
+
+  //Подсчёт стоимости заказа а разделе "Заказ"
+  function CountingTheCost(){
+    $.ajax({
+        type: "POST",
+        url: "php/CountingTheCost_inOrder.php",
+        
+        success: function(data) {
+          $("#TotalCost_inOrder").html('');
+          $("#TotalCost_inOrder").append(data);
+          //alert(data);
+        }
+    }); 
+    return false;
+  }
+
+  // Вывод названия файла при его добавлении в разделе "Заказ"
+  $(document).ready(function() {
+    $('#file').change(function() {
+      $('#file').each(function() {
+        var name = this.value;
+          reWin = /.*\\(.*)/;
+        var fileTitle = name.replace(reWin, "$1");
+        reUnix = /.*\/(.*)/;
+        fileTitle = fileTitle.replace(reUnix, "$1");
+        $('#namefile').html(fileTitle);
+      });
+    });
+  });
+
+  // Отправка формы на сервер в разделе "Заказ"
+  function SendData_FormOrder() {
+    var name_client = $("#text1_order").val();
+    var phone_client = $("#text2_order").val();
+    var text_client = $("#textarea_order").val();
+    var status = 0;
+
+    $("#text1_order").css('box-shadow', 'none');
+    $("#text2_order").css('box-shadow', 'none');
+
+    if(name_client == "" || phone_client == ""){
+      status = 1;
+    }
+    if(status == 1){
+      if(name_client == ""){
+        $("#text1_order").css('box-shadow', '0 0 3px 1px #FF0000');
+      }
+      if (phone_client == ""){
+        $("#text2_order").css('box-shadow', '0 0 3px 1px #FF0000');
+      }
+    }else{
+
+      $("#div_info6_order").css('display','none');
+      $("#batt_sendFormOrder").css('display','none');
+      $("#animation_load").css('display','table');
+      //Отправка изображения на сервер
+      var form_data = new FormData(document.getElementById("form_order"));
+      $.ajax({
+        url: "php/UploadImage_inOrder.php",
+        type: "POST",
+        data: form_data,
+        enctype: 'multipart/form-data',
+        processData: false,
+        contentType: false,
+
+        success: function(data) {
+          //alert(data);
+
+          if(data == 'Не был выбран файл для загрузки' || data == 'Файл успешно загружен'){
+            //Отправка всего заказа на E-mail
+              $.ajax({
+                type: "POST",
+                url: "php/SendData_inOrder.php",
+                data: "&name_client="+name_client+"&phone_client="+phone_client+"&text_client="+text_client,
+                
+                success: function(data) {
+                  
+                  $("#animation_load").css('display','none');
+                  $('#div_info6_order').fadeToggle(1000);
+
+                  setTimeout(function(){
+                    $('#div_info6_order').fadeToggle(1000);
+                    setTimeout(function(){
+                      $('#batt_sendFormOrder').fadeToggle(1000);
+                    }, 1100);
+                  }, 3000);
+
+                  $("#ContentPO").html('');
+                  $("#ContentPO").html('<div id="info5_order">Здесь будет отображаться список выбранных вами товаров. Для того чтобы выбрать товар необходимо воспользоваться окном "Выбор товаров".</div>');
+                  $("#text1_order").val('');
+                  $("#text2_order").val('');
+                  $("#textarea_order").val('');
+                  $("#namefile").html('');
+                  $("#file").val('');
+                  $("#TotalCost_inOrder").html('');
+                  $('#SelectPO').hide();
+                }
+              });
+          }else{
+            alert(data);
+          }
+        }
+      });
+    }
+    return false;
+  } 
+</script>
+
+<!--Подгрузка сообщения об успешном заказе в модульное окно с товаром-->
+<script type="text/javascript">
+	function good_order(form_num){
+		var data_1 = $('#'+form_num+' .textbox1').val();
+		var data_2 = $('#'+form_num+' .textbox2').val();
+		var data_3 = $('#'+form_num+' .textbox3').val();
+		var id_order = form_num;
+		var status = 0; 
+
+    $('#'+form_num+' .textbox1').css('box-shadow', 'none');
+    $('#'+form_num+' .textbox2').css('box-shadow', 'none');
+
+		if(data_1 == "" || data_2 == ""){
+			status = 1;
+		}
+
+		if(status == 1){
+			if(data_1 == ""){
+        $('#'+form_num+' .textbox1').css('box-shadow', '0 0 3px 1px #FF0000');
+			}
+			if (data_2 == ""){
+        $('#'+form_num+' .textbox2').css('box-shadow', '0 0 3px 1px #FF0000');
+			}
+		}else{
+			//Отсылаем параметры с помощью  ajax
+			$.ajax({
+				type: "POST",
+				url: "php/Send_Data_From_Modal_Window.php",
+				data: "&data_1="+data_1+"&data_2="+data_2+"&data_3="+data_3+"&id_order="+id_order
+			});
+			
+			//Добавляем блок message_modal в блок modal_div 
+			//$(".modal_div").append($(".message_modal"));
+			//Обнуляем текстовые поля и выводим информационное сообщение
+			$('#'+form_num+' .textbox1').val('');
+			$('#'+form_num+' .textbox2').val(''); 
+			$('#'+form_num+' .textbox3').val('');
+			$(".content_modal").css("display", "none");
+			$(".message_modal").fadeIn(2000);
+			$(".message_modal").css("display", "block");
+		}
+	}
+</script>
+
+<!--Скрипт для простой формы-->
+<script type="text/javascript">
+	//Проверка на введенные данные и отсылка данных на почту простой формы заказов 
+	function Send_Data_From_Form_Order_Simple(){
+		var data_1 = $("#id_name_form_order_simple").val();
+		var data_2 = $("#id_phone_form_order_simple").val();
+		var data_3 = $("#textarea_form_order_simple").val();
+		var status = 0; 
+
+		$("#id_name_form_order_simple").css('border', '1px solid #939393');
+		$("#id_phone_form_order_simple").css('border', '1px solid #939393');
+		$("#textarea_form_order_simple").css('border', '1px solid #939393');
+
+		if(data_1 == "" || data_2 == "" || data_3 == ""){
+			status = 1;
+		}
+		
+		if(status == 1){
+			if(data_1 == ""){
+				$("#id_name_form_order_simple").css('border', '1px solid red');
+			}
+			if (data_2 == ""){
+				$("#id_phone_form_order_simple").css('border', '1px solid red');
+			}
+			if (data_3 == ""){
+				$("#textarea_form_order_simple").css('border', '1px solid red');
+			}
+			
+		}
+		else{
+			$.ajax({
+				type: "POST",
+				url: "php/Send_Data_From_Form_Order_Simple.php",
+				data: "&data_1="+data_1+"&data_2="+data_2+"&data_3="+data_3	
+			});
+			Open_Modal_Window();
+			$("#id_name_form_order_simple").val('');
+			$("#id_phone_form_order_simple").val('');
+			$("#textarea_form_order_simple").val('');  
+		}
+	};
+
+	function Open_Modal_Window(){
+		$("#modal13").css('margin','90px auto');
+		var overlay = $('#overlay');
+		overlay.fadeIn(350, 
+        function(){ 
+            $("#modal13") 
+                .css('display', 'block')
+                .animate({opacity: 1, margin:'90px auto'}, 300);
+            $(".message_modal").css("display", "block");
+    	});
+	};
+</script>
+
+<!--Скрипт для формы формы отправки сообщения из "Контакты"-->
+<script type="text/javascript">
+	//Проверка на введенные данные и отсылка данных на почту c раздела "Контакты"
+	function Send_Data_From_Form_in_Contacts(){
+		var data_1 = $("#name_client_FC").val();
+		var data_2 = $("#e-mail_client_FC").val();
+		var data_3 = $("#text_client_FC").val();
+		var status = 0; 
+
+		$("#name_client_FC").css('border', '0px solid red');
+		$("#e-mail_client_FC").css('border', '0px solid red');
+		$("#text_client_FC").css('border', '0px solid red');
+
+		if(data_1 == "" || data_2 == "" || data_3 == ""){
+			status = 1;
+		}
+		
+		if(status == 1){
+			if(data_1 == ""){
+				$("#name_client_FC").css('border', '1px solid red');
+			}
+			if (data_2 == ""){
+				$("#e-mail_client_FC").css('border', '1px solid red');
+			}
+			if (data_3 == ""){
+				$("#text_client_FC").css('border', '1px solid red');	
+			}
+		}
+		else{
+			$.ajax({
+				type: "POST",
+				url: "php/Send_Data_From_Form_in_Contacts.php",
+				data: "&data_1="+data_1+"&data_2="+data_2+"&data_3="+data_3	
+			});
+
+			$("#name_client_FC").val('');
+			$("#e-mail_client_FC").val('');
+			$("#text_client_FC").val('');
+	  		
+	  		setTimeout(function(){
+	  			$('#text_message_FC').fadeToggle(1000);
+	  		}, 5000);
+
+	  		$('#text_message_FC').fadeToggle(1000);
+		}
+	};
+
+	function err(){
+		alert("Ссылка временно недоступна! Простите за неудобства!");
+	};
+</script>
+
+<!-- При наведении на товар в разделе "Каталог" картинка меняется -->
+<script type="text/javascript">
+  $("#img15_cat").mouseover(function(){
+    $("#img15_cat").css('display','none');
+    $("#img15_1_cat").css('display','block');
+  });
+  $("#img15_1_cat").mouseout(function(){
+    $("#img15_cat").css('display','block');
+    $("#img15_1_cat").css('display','none');
+  });
+</script>
+
+<!-- JS скрипт обработки модальных окон -->
+<script>
+$(document).ready(function() { 
+    var overlay = $('#overlay'); 
+    var open_modal = $('.open_modal'); 
+    var open_modal_simple = $('.open_modal_simple');
+    var close = $('.modal_close, #overlay'); 
+    var modal = $('.modal_div');
+
+    $('.modal_div').on("click", false);
+ 	
+    open_modal.click(function(event){ 
+        event.preventDefault(); 
+        var div = $(this).attr('href'); 
+        $(div).css('margin','55px auto');
+        $('#slideleft').css('display', 'none');
+		$('#slideright').css('display', 'none');
+
+        overlay.fadeIn(350, 
+            function(){ 
+                $(div) 
+                    .css('display', 'block')
+                    // .animate({opacity: 1, left:'50%', top: '50%'}, 300); 
+                    .animate({opacity: 1, margin:'55px auto'}, 300); 
+        });
+    });
+
+    open_modal_simple.click(function(){
+		// Open_Modal_Window();
+		Send_Data_From_Form_Order_Simple();
+    });
+ 
+    close.click(function(){ 
+            modal.animate({opacity: 0, margin:'90px auto'}, 300, 
+            // modal.animate({opacity: 0, left:'100%', top: '50%'}, 300,
+                function(){
+                	$('.style_textbox12_M').css('border', '1px solid #939393');
+                	$('.style_textbox12_M').val(''); 
+					$('.style_textbox3_M').val('');
+					$('.content_modal').css('display', 'block');
+					$('.message_modal').css('display', 'none'); 
+                    $(this).css('display', 'none');
+                    history.pushState('', document.title, window.location.pathname);//Удаление хэш-кода
+                    overlay.fadeOut(300);                   
+                }
+            );
+    });
+
+});
+</script>
+
+<!-- Сообщение при попытке покинуть страницу -->
+<script>
+$(document).ready(function() {
+	var closing_page = $('#closing_page');
+	closing_page.mouseover(function(){
+		//alert('всё хорошо!');
+	});
+}); 
+</script>
+
+<!-- Modal Windows -->
+<div id="overlay">
+	
+	<!-- Modal Window 1 -->
+	<div id="modal1" class="modal_div" > 
+		<span class="modal_close">X</span>
+		<div class="content_modal">
+			<div class="block1_modal float_block_M">
+				<div class="header_modal">Фруктовый рай</div>
+				<div class="img_modal"><img src="images/img1_modal.png"></div>
+			</div>
+			<div class="block2_modal float_block_M">
+				<div class="description_modal">
+					<div id="description_modal1">
+						<div>Состав корзины:</div>
+						<div>
+							·ананас<br/>
+							·банан<br/>
+							·гранат<br/>
+							·манго<br/>
+							·апельсин<br/>
+							·мандарин<br/>
+							·грейпфрут<br/>
+							·киви<br/>
+							·яблоко<br/>
+						</div>
+						<div>
+							·помело<br/>
+							·кокос<br/>
+							·виноград<br/>
+							·груша<br/>
+							·клубника<br/>
+							·физалис<br/>
+							·слива<br/>
+              ·<i>упаковка, корзина</i><br/>
+							<b>·ДОСТАВКА БЕСПЛАТНО</b>
+						</div>
+						<div style="clear:both;"></div>
+					</div>
+					<div class="info1_modal1 class_for_js">Состав корзины может меняться в зависимости от ваших предпочтений. Укажите это при заказе в  поле  "Ваше пожелание к заказу...".</div>
+				</div>
+				<div id="cost1_modal1">3499 руб.</div>
+			</div>
+			<div style="clear:both;"></div>
+			<div class="block3_modal float_block_M">
+				<form id="form_001">
+					<div class="float_block3_M">
+						<input class="textbox1 style_textbox12_M" type="text" placeholder="Введите имя..." value=""/>
+					</div>
+					<div class="float_block3_M">
+						<input class="textbox2 style_textbox12_M" type="text" placeholder="Введите телефон..." value=""/>
+					</div>
+					<div>
+						<textarea class="textbox3 style_textbox3_M" placeholder="Ваше пожелание к заказу..." value=""></textarea>
+					</div>
+				</form>
+			</div>
+			<div class="block4_modal float_block_M">
+				<div class="info2_modal">Заказ будет готов в течение суток!</div>
+				<input class="button_modal animate_button_M" type="button" onclick="good_order('form_001')" value="ЗАКАЗАТЬ"/>
+			</div>
+			<div style="clear:both;"></div>
+			<!-- <div class="info3_modal">*Наличие фруктов определяется по сезону. Неучтённые фрукты в стоимость не входят!</div> -->
+		</div>
+		<div class="message_modal">
+			<div class="info_message">Ваш заказ принят!</div>
+			<div class="info_message">Мы свяжемся с Вами в ближайшее время...</div>
+		</div>
+	</div>
+
+	<!-- Modal Window 2 -->
+	<div id="modal2" class="modal_div"> 
+		<span class="modal_close">X</span>
+		<div class="content_modal">
+			<div class="block1_modal float_block_M">
+				<div class="header_modal">Сладкая жизнь (mini)</div>
+				<div class="img_modal"><img src="images/img2_modal.png"></div>
+			</div>
+			<div class="block2_modal float_block_M">
+				<div class="description_modal">
+					<div id="description_modal2">
+						<div>Состав торта:</div>
+						<div>
+							·Kinder Maxi - 45 шт.<br/>
+							·Kinder Chocolate - 30 шт.<br/>
+							·Kinder Country - 4 шт.<br/>
+							·Kinder СЮРПРИЗ - 4 шт.<br/>
+              ·<i>декор, упаковка</i><br/>
+							<b>·ДОСТАВКА БЕСПЛАТНО</b>
+						</div>
+						<div style="clear:both;"></div>
+					</div>
+					<div class="info1_modal2">Торт на пенопластовой основе, т.е. внутри <b>сладости отсутствуют</b>!</div>
+					<div class="info11_modal2 class_for_js">Состав торта может меняться в зависимости от ваших предпочтений. Укажите это при заказе в  поле  "Ваше пожелание к заказу...".</div>
+				</div>
+				<div id="cost1_modal2">2399 руб.</div>
+			</div>
+			<div style="clear:both;"></div>
+			<div class="block3_modal float_block_M">
+				<form id="form_002">
+					<div class="float_block3_M">
+						<input class="textbox1 style_textbox12_M" type="text" placeholder="Введите имя..." value=""/>
+					</div>
+					<div class="float_block3_M">
+						<input class="textbox2 style_textbox12_M" type="text" placeholder="Введите телефон..." value=""/>
+					</div>
+					<div>
+						<textarea class="textbox3 style_textbox3_M" placeholder="Ваше пожелание к заказу..." value=""></textarea>
+					</div>
+				</form>
+			</div>
+			<div class="block4_modal float_block_M">
+				<div class="info2_modal">Заказ будет готов в течение суток!</div>
+				<input class="button_modal animate_button_M" type="button" onclick="good_order('form_002')" value="ЗАКАЗАТЬ"/>
+			</div>
+			<div style="clear:both;"></div>
+			<div class="info3_modal"></div>
+		</div>
+		<div class="message_modal">
+			<div class="info_message">Ваш заказ принят!</div>
+			<div class="info_message">Мы свяжемся с Вами в ближайшее время...</div>
+		</div>
+	</div>
+
+	<!-- Modal Window 3 -->
+	<div id="modal3" class="modal_div" > 
+		<span class="modal_close">X</span>
+		<div class="content_modal">
+			<div class="block1_modal float_block_M">
+				<div class="header_modal">Сладкая жизнь (maxi)</div>
+				<div class="img_modal"><img src="images/img2_modal.png"></div>
+			</div>
+			<div class="block2_modal float_block_M">
+				<div class="description_modal">
+					<div id="description_modal3">
+						<div>Состав торта:</div>
+						<div>
+							·Kinder Maxi - 47 шт.<br/>
+							·Kinder Chocolate - 35 шт.<br/>
+							·Kinder Country - 4 шт.<br/>
+							·Kinder СЮРПРИЗ - 15 шт.<br/>
+							·Kinder Delice - 10 шт.<br/>
+              ·<i>декор, упаковка</i><br/>
+							<b>·ДОСТАВКА БЕСПЛАТНО</b>
+						</div>
+						<div style="clear:both;"></div>
+					</div>
+					<div class="info1_modal3">Торт на основе коробок, т.е. внутри <b>всё заполнено сладостями</b>!</div>
+					<div class="info11_modal3 class_for_js">Состав торта может меняться в зависимости от ваших предпочтений. Укажите это при заказе в  поле  "Ваше пожелание к заказу...".</div>
+				</div>
+				<div id="cost1_modal3">3199 руб.</div>
+			</div>
+			<div style="clear:both;"></div>
+			<div class="block3_modal float_block_M">
+				<form id="form_003">
+					<div class="float_block3_M">
+						<input class="textbox1 style_textbox12_M" type="text" placeholder="Введите имя..." value=""/>
+					</div>
+					<div class="float_block3_M">
+						<input class="textbox2 style_textbox12_M" type="text" placeholder="Введите телефон..." value=""/>
+					</div>
+					<div>
+						<textarea class="textbox3 style_textbox3_M" placeholder="Ваше пожелание к заказу..." value=""></textarea>
+					</div>
+				</form>
+			</div>
+			<div class="block4_modal float_block_M">
+				<div class="info2_modal">Заказ будет готов в течение суток!</div>
+				<input class="button_modal animate_button_M" type="button" onclick="good_order('form_003')" value="ЗАКАЗАТЬ"/>
+			</div>
+			<div style="clear:both;"></div>
+			<div class="info3_modal"></div>
+		</div>
+		<div class="message_modal">
+			<div class="info_message">Ваш заказ принят!</div>
+			<div class="info_message">Мы свяжемся с Вами в ближайшее время...</div>
+		</div>
+	</div>
+
+	<!-- Modal Window 4 -->
+	<div id="modal4" class="modal_div" > 
+		<span class="modal_close">X</span>
+		<div class="content_modal">
+			<div class="block1_modal float_block_M">
+				<div class="header_modal">Овощное наслаждение</div>
+				<div class="img_modal"><img src="images/img3_modal.png"></div>
+			</div>
+			<div class="block2_modal float_block_M">
+				<div class="description_modal">
+					<div id="description_modal4">
+						<div>Состав корзины:</div>
+						<div>
+							·томат<br/>
+							·томат черри<br/>
+							·огурец<br/>
+							·баклажан<br/>
+							·кабачок<br/>
+							·пастернак<br/>
+							·свекла<br/>
+							·перец болгарский<br/>
+              ·перец острый
+						</div>
+						<div>
+              ·сельдерей<br/>
+							·лук синий<br/>
+							·капуста цветная<br/>
+							·чеснок<br/>
+							·редис<br/>
+							·салат<br/>
+							·петрушка<br/>
+							·базилик<br/>
+              ·<i>упаковка, корзина</i><br/>
+              <b>·ДОСТАВКА БЕСПЛАТНО</b>
+						</div>
+						<div style="clear:both;"></div>
+					</div>
+					<div class="info1_modal4 class_for_js">Состав корзины может меняться в зависимости от ваших предпочтений. Укажите это при заказе в  поле  "Ваше пожелание к заказу...".</div>
+				</div>
+				<div id="cost1_modal4">3199 руб.</div>
+			</div>
+			<div style="clear:both;"></div>
+			<div class="block3_modal float_block_M">
+				<form id="form_004">
+					<div class="float_block3_M">
+						<input class="textbox1 style_textbox12_M" type="text" placeholder="Введите имя..." value=""/>
+					</div>
+					<div class="float_block3_M">
+						<input class="textbox2 style_textbox12_M" type="text" placeholder="Введите телефон..." value=""/>
+					</div>
+					<div>
+						<textarea class="textbox3 style_textbox3_M" placeholder="Ваше пожелание к заказу..." value=""></textarea>
+					</div>
+				</form>
+			</div>
+			<div class="block4_modal float_block_M">
+				<div class="info2_modal">Заказ будет готов в течение суток!</div>
+				<input class="button_modal animate_button_M" type="button" onclick="good_order('form_004')" value="ЗАКАЗАТЬ"/>
+			</div>
+			<div style="clear:both;"></div>
+			<!-- <div class="info3_modal">*Наличие овощей определяется по сезону. Неучтённые овощи в стоимость не входят!</div> -->
+		</div>
+		<div class="message_modal">
+			<div class="info_message">Ваш заказ принят!</div>
+			<div class="info_message">Мы свяжемся с Вами в ближайшее время...</div>
+		</div>
+	</div>
+
+	<!-- Modal Window 5 -->
+	<div id="modal5" class="modal_div" > 
+		<span class="modal_close">X</span>
+		<div class="content_modal">
+			<div class="block1_modal float_block_M">
+				<div class="header_modal">Fruit Box (summer)</div>
+				<div class="img_modal"><img src="images/img5_modal.png"></div>
+			</div>
+			<div class="block2_modal float_block_M">
+				<div class="description_modal">
+					<div id="description_modal5">
+						<div>Состав бокса:</div>
+						<div>
+							·ананас<br/>
+							·банан<br/>
+							·гранат<br/>
+							·клубника<br/>
+							·авокадо<br/>
+							·лимон<br/>
+							·апельсин<br/>
+							·лайм<br/>
+							·киви<br/>
+							·кокос
+						</div>
+						<div>
+							·груша<br/>
+							·минеола<br/>
+							·грейпфрут<br/>
+							·физалис<br/>
+							·яблоко<br/>
+							·манго<br/>
+							·виноград<br/>
+							·слива<br/>
+              ·<i>декор, гофроящик</i><br/>
+              <b>·ДОСТАВКА БЕСПЛАТНО</b>
+						</div>
+						<div style="clear:both;"></div>
+					</div>
+					<div class="info1_modal4 class_for_js">Состав бокса может меняться в зависимости от ваших предпочтений. Укажите это при заказе в  поле  "Ваше пожелание к заказу...".</div>
+				</div>
+				<div id="cost1_modal5">4050 руб.</div>
+				<div id="cost2_modal5">2999 руб.</div>
+			</div>
+			<div style="clear:both;"></div>
+			<div class="block3_modal float_block_M">
+				<form id="form_005">
+					<div class="float_block3_M">
+						<input class="textbox1 style_textbox12_M" type="text" placeholder="Введите имя..." value=""/>
+					</div>
+					<div class="float_block3_M">
+						<input class="textbox2 style_textbox12_M" type="text" placeholder="Введите телефон..." value=""/>
+					</div>
+					<div>
+						<textarea class="textbox3 style_textbox3_M" placeholder="Ваше пожелание к заказу..." value=""></textarea>
+					</div>
+				</form>
+			</div>
+			<div class="block4_modal float_block_M">
+				<div class="info2_modal">Заказ будет готов в течение суток!</div>
+				<input class="button_modal animate_button_M" type="button" onclick="good_order('form_005')" value="ЗАКАЗАТЬ"/>
+			</div>
+			<div style="clear:both;"></div>
+			<!-- <div class="info3_modal">*Наличие фруктов определяется по сезону. Неучтённые фрукты в стоимость не входят!</div> -->
+		</div>
+		<div class="message_modal">
+			<div class="info_message">Ваш заказ принят!</div>
+			<div class="info_message">Мы свяжемся с Вами в ближайшее время...</div>
+		</div>
+	</div>
+
+	<!-- Modal Window 6 -->
+	<div id="modal6" class="modal_div" > 
+		<span class="modal_close">X</span>
+		<div class="content_modal">
+			<div class="block1_modal float_block_M">
+				<div class="header_modal">Love Story</div>
+				<div class="img_modal"><img src="images/img4_modal.png"></div>
+			</div>
+			<div class="block2_modal float_block_M">
+				<div class="description_modal">
+					<div id="description_modal6">
+						<div>Состав торта:</div>
+						<div>
+							·Kinder Chocolate - 40 шт.<br/>
+							·Kinder СЮРПРИЗ - 10 шт.<br/>
+							·мишка Тедди - 1 шт.<br/>
+              ·<i>декор, упаковка</i><br/>
+              <b>·ДОСТАВКА БЕСПЛАТНО</b>
+						</div>
+						<div style="clear:both;"></div>
+					</div>
+					<div class="info1_modal6 class_for_js">Состав композиции может меняться в зависимости от ваших предпочтений. Укажите это при заказе в  поле  "Ваше пожелание к заказу...".</div>
+				</div>
+				<div id="cost1_modal6">2099 руб.</div>
+			</div>
+			<div style="clear:both;"></div>
+			<div class="block3_modal float_block_M">
+				<form id="form_006">
+					<div class="float_block3_M">
+						<input class="textbox1 style_textbox12_M" type="text" placeholder="Введите имя..." value=""/>
+					</div>
+					<div class="float_block3_M">
+						<input class="textbox2 style_textbox12_M" type="text" placeholder="Введите телефон..." value=""/>
+					</div>
+					<div>
+						<textarea class="textbox3 style_textbox3_M" placeholder="Ваше пожелание к заказу..." value=""></textarea>
+					</div>
+				</form>
+			</div>
+			<div class="block4_modal float_block_M">
+				<div class="info2_modal">Заказ будет готов в течение суток!</div>
+				<input class="button_modal animate_button_M" type="button" onclick="good_order('form_006')" value="ЗАКАЗАТЬ"/>
+			</div>
+			<div style="clear:both;"></div>
+			<div class="info3_modal"></div>
+		</div>
+		<div class="message_modal">
+			<div class="info_message">Ваш заказ принят!</div>
+			<div class="info_message">Мы свяжемся с Вами в ближайшее время...</div>
+		</div>
+	</div>
+
+	<!-- Modal Window 7 -->
+  <div id="modal7" class="modal_div" > 
+    <span class="modal_close">X</span>
+    <div class="content_modal">
+      <div class="block1_modal float_block_M">
+        <div class="header_modal">Плюшевая сказка (blue)</div>
+        <div class="img_modal"><img src="images/img7_modal.png"></div>
+      </div>
+      <div class="block2_modal float_block_M">
+        <div class="description_modal">
+          <div id="description_modal7">
+            <div>
+              <b>Описание:</b> данный букет состоит из 7-ми мишек, выполнен в синем цвете. Размеры: диаметр - 39см, высота - 56см.  
+            </div>
+            <div>
+              <b>ДОСТАВКА БЕСПЛАТНО!</b>
+            </div>
+            <div style="clear:both;"></div>
+          </div>
+          <div class="info1_modal7 class_for_js">Состав и цвет букета может меняться в зависимости от ваших предпочтений. Укажите это при заказе в  поле  "Ваше пожелание к заказу...".</div>
+        </div>
+        <div id="cost1_modal7">1799 руб.</div>
+      </div>
+      <div style="clear:both;"></div>
+      <div class="block3_modal float_block_M">
+        <form id="form_007">
+          <div class="float_block3_M">
+            <input class="textbox1 style_textbox12_M" type="text" placeholder="Введите имя..." value=""/>
+          </div>
+          <div class="float_block3_M">
+            <input class="textbox2 style_textbox12_M" type="text" placeholder="Введите телефон..." value=""/>
+          </div>
+          <div>
+            <textarea class="textbox3 style_textbox3_M" placeholder="Ваше пожелание к заказу..." value=""></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="block4_modal float_block_M">
+        <div class="info2_modal">Заказ будет готов в течение суток!</div>
+        <input class="button_modal animate_button_M" type="button" onclick="good_order('form_007')" value="ЗАКАЗАТЬ"/>
+      </div>
+      <div style="clear:both;"></div>
+      <div class="info3_modal"></div>
+    </div>
+    <div class="message_modal">
+      <div class="info_message">Ваш заказ принят!</div>
+      <div class="info_message">Мы свяжемся с Вами в ближайшее время...</div>
+    </div>
+  </div>
+
+	<!-- Modal Window 8 -->
+  <div id="modal8" class="modal_div" > 
+    <span class="modal_close">X</span>
+    <div class="content_modal">
+      <div class="block1_modal float_block_M">
+        <div class="header_modal">Плюшевая сказка (red)</div>
+        <div class="img_modal"><img src="images/img8_modal.png"></div>
+      </div>
+      <div class="block2_modal float_block_M">
+        <div class="description_modal">
+          <div id="description_modal8">
+            <div>
+              <b>Описание:</b> данный букет состоит из 7-ми мишек, выполнен в красном цвете. Размеры: диаметр - 39см, высота - 56см.
+            </div>
+            <div>
+              <b>ДОСТАВКА БЕСПЛАТНО!</b>
+            </div>
+            <div style="clear:both;"></div>
+          </div>
+          <div class="info1_modal8 class_for_js">Состав и цвет букета может меняться в зависимости от ваших предпочтений. Укажите это при заказе в  поле  "Ваше пожелание к заказу...".</div>
+        </div>
+        <div id="cost1_modal8">1799 руб.</div>
+      </div>
+      <div style="clear:both;"></div>
+      <div class="block3_modal float_block_M">
+        <form id="form_008">
+          <div class="float_block3_M">
+            <input class="textbox1 style_textbox12_M" type="text" placeholder="Введите имя..." value=""/>
+          </div>
+          <div class="float_block3_M">
+            <input class="textbox2 style_textbox12_M" type="text" placeholder="Введите телефон..." value=""/>
+          </div>
+          <div>
+            <textarea class="textbox3 style_textbox3_M" placeholder="Ваше пожелание к заказу..." value=""></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="block4_modal float_block_M">
+        <div class="info2_modal">Заказ будет готов в течение суток!</div>
+        <input class="button_modal animate_button_M" type="button" onclick="good_order('form_008')" value="ЗАКАЗАТЬ"/>
+      </div>
+      <div style="clear:both;"></div>
+      <div class="info3_modal"></div>
+    </div>
+    <div class="message_modal">
+      <div class="info_message">Ваш заказ принят!</div>
+      <div class="info_message">Мы свяжемся с Вами в ближайшее время...</div>
+    </div>
+  </div>
+
+	<!-- Modal Window 9 -->
+  <div id="modal9" class="modal_div" > 
+    <span class="modal_close">X</span>
+    <div class="content_modal">
+      <div class="block1_modal float_block_M">
+        <div class="header_modal">Плюшевая сказка (violet)</div>
+        <div class="img_modal"><img src="images/img9_modal.png"></div>
+      </div>
+      <div class="block2_modal float_block_M">
+        <div class="description_modal">
+          <div id="description_modal9">
+            <div>
+              <b>Описание:</b> данный букет состоит из 7-ми мишек, выполнен в фиолетовом цвете. Размеры: диаметр - 39см, высота - 56см.
+            </div>
+            <div>
+              <b>ДОСТАВКА БЕСПЛАТНО!</b>
+            </div>
+            <div style="clear:both;"></div>
+          </div>
+          <div class="info1_modal9 class_for_js">Состав и цвет букета может меняться в зависимости от ваших предпочтений. Укажите это при заказе в  поле  "Ваше пожелание к заказу...".</div>
+        </div>
+        <div id="cost1_modal9">1799 руб.</div>
+      </div>
+      <div style="clear:both;"></div>
+      <div class="block3_modal float_block_M">
+        <form id="form_009">
+          <div class="float_block3_M">
+            <input class="textbox1 style_textbox12_M" type="text" placeholder="Введите имя..." value=""/>
+          </div>
+          <div class="float_block3_M">
+            <input class="textbox2 style_textbox12_M" type="text" placeholder="Введите телефон..." value=""/>
+          </div>
+          <div>
+            <textarea class="textbox3 style_textbox3_M" placeholder="Ваше пожелание к заказу..." value=""></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="block4_modal float_block_M">
+        <div class="info2_modal">Заказ будет готов в течение суток!</div>
+        <input class="button_modal animate_button_M" type="button" onclick="good_order('form_009')" value="ЗАКАЗАТЬ"/>
+      </div>
+      <div style="clear:both;"></div>
+      <div class="info3_modal"></div>
+    </div>
+    <div class="message_modal">
+      <div class="info_message">Ваш заказ принят!</div>
+      <div class="info_message">Мы свяжемся с Вами в ближайшее время...</div>
+    </div>
+  </div>
+
+	<!-- Modal Window 10 -->
+  <div id="modal10" class="modal_div" > 
+    <span class="modal_close">X</span>
+    <div class="content_modal">
+      <div class="block1_modal float_block_M">
+        <div class="header_modal">Фруктовые фантазии</div>
+        <div class="img_modal"><img src="images/img10_modal.png"></div>
+      </div>
+      <div class="block2_modal float_block_M">
+        <div class="description_modal">
+          <div id="description_modal10">
+            <div>Состав корзины:</div>
+            <div>
+              ·апельсин<br/>
+              ·минеола<br/>
+              ·мандарин<br/>
+              ·лимон<br/>
+              ·манго<br/>
+              ·груша<br/>
+              ·киви<br/>
+            </div>
+            <div>
+              ·ананас<br/>
+              ·помело<br/>
+              ·виноград<br/>
+              ·яблоки зелёные<br/>
+              ·яблоки красные<br/>
+              ·гранат<br/>
+              ·<i>упаковка, корзина</i><br/>
+              <b>·ДОСТАВКА БЕСПЛАТНО</b>
+            </div>
+            <div style="clear:both;"></div>
+          </div>
+          <div class="info1_modal10 class_for_js">Состав корзины может меняться в зависимости от ваших предпочтений. Укажите это при заказе в  поле  "Ваше пожелание к заказу...".</div>
+        </div>
+        <div id="cost1_modal10">2599 руб.</div>
+      </div>
+      <div style="clear:both;"></div>
+      <div class="block3_modal float_block_M">
+        <form id="form_010">
+          <div class="float_block3_M">
+            <input class="textbox1 style_textbox12_M" type="text" placeholder="Введите имя..." value=""/>
+          </div>
+          <div class="float_block3_M">
+            <input class="textbox2 style_textbox12_M" type="text" placeholder="Введите телефон..." value=""/>
+          </div>
+          <div>
+            <textarea class="textbox3 style_textbox3_M" placeholder="Ваше пожелание к заказу..." value=""></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="block4_modal float_block_M">
+        <div class="info2_modal">Заказ будет готов в течение суток!</div>
+        <input class="button_modal animate_button_M" type="button" onclick="good_order('form_010')" value="ЗАКАЗАТЬ"/>
+      </div>
+      <div style="clear:both;"></div>
+      <!-- <div class="info3_modal">*Наличие фруктов определяется по сезону. Неучтённые фрукты в стоимость не входят!</div> -->
+    </div>
+    <div class="message_modal">
+      <div class="info_message">Ваш заказ принят!</div>
+      <div class="info_message">Мы свяжемся с Вами в ближайшее время...</div>
+    </div>
+  </div>
+
+	<!-- Modal Window 11 -->
+  <div id="modal11" class="modal_div" > 
+    <span class="modal_close">X</span>
+    <div class="content_modal">
+      <div class="block1_modal float_block_M">
+        <div class="header_modal">Карнавал вкуса</div>
+        <div class="img_modal"><img src="images/img11_modal.png"></div>
+      </div>
+      <div class="block2_modal float_block_M">
+        <div class="description_modal">
+          <div id="description_modal11">
+            <div>Состав коробки:</div>
+            <div>
+              ·Kinder Сюрприз<br/>
+              ·Kinder Chocolate<br/>
+              ·Kinder Delice<br/>
+              ·Kinder Maxi<br/>
+              ·Mars<br/>
+              ·Twix
+            </div>
+            <div>
+              ·KitKat<br/>
+              ·Nesquik<br/>
+              ·M&M<br/>
+              ·Ritter Sport<br/>
+              ·Мишка Тедди<br/>
+              ·<i>коробка, декор</i><br/>
+              <b>·ДОСТАВКА БЕСПЛАТНО</b>
+            </div>
+            <div style="clear:both;"></div>
+          </div>
+          <div class="info1_modal11 class_for_js">Состав коробки может меняться в зависимости от ваших предпочтений. Укажите это при заказе в  поле  "Ваше пожелание к заказу...".</div>
+        </div>
+        <div id="cost1_modal11">1999 руб.</div>
+      </div>
+      <div style="clear:both;"></div>
+      <div class="block3_modal float_block_M">
+        <form id="form_011">
+          <div class="float_block3_M">
+            <input class="textbox1 style_textbox12_M" type="text" placeholder="Введите имя..." value=""/>
+          </div>
+          <div class="float_block3_M">
+            <input class="textbox2 style_textbox12_M" type="text" placeholder="Введите телефон..." value=""/>
+          </div>
+          <div>
+            <textarea class="textbox3 style_textbox3_M" placeholder="Ваше пожелание к заказу..." value=""></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="block4_modal float_block_M">
+        <div class="info2_modal">Заказ будет готов в течение суток!</div>
+        <input class="button_modal animate_button_M" type="button" onclick="good_order('form_011')" value="ЗАКАЗАТЬ"/>
+      </div>
+      <div style="clear:both;"></div>
+      <!-- <div class="info3_modal">*Наличие фруктов определяется по сезону. Неучтённые фрукты в стоимость не входят!</div> -->
+    </div>
+    <div class="message_modal">
+      <div class="info_message">Ваш заказ принят!</div>
+      <div class="info_message">Мы свяжемся с Вами в ближайшее время...</div>
+    </div>
+  </div>
+
+	<!-- Modal Window 12 -->
+  <div id="modal12" class="modal_div" > 
+    <span class="modal_close">X</span>
+    <div class="content_modal">
+      <div class="block1_modal float_block_M">
+        <div class="header_modal">Fruit Box (winter)</div>
+        <div class="img_modal"><img src="images/img12_modal.png"></div>
+      </div>
+      <div class="block2_modal float_block_M">
+        <div class="description_modal">
+          <div id="description_modal12">
+            <div>Состав корзины:</div>
+            <div>
+              ·помело<br/>
+              ·мандарин<br/>
+              ·лимон<br/>
+              ·ананас<br/>
+              ·виноград<br/>
+              ·минеола<br/>
+              ·груша<br/>
+            </div>
+            <div>
+              ·манго<br/>
+              ·киви<br/>
+              ·апельсин<br/>
+              ·яблоки зелёные<br/>
+              ·яблоки красные<br/>
+              ·гранат<br/>
+              ·<i>декор, гофроящик</i><br/>
+              <b>·ДОСТАВКА БЕСПЛАТНО</b>
+            </div>
+            <div style="clear:both;"></div>
+          </div>
+          <div class="info1_modal12 class_for_js">Состав корзины может меняться в зависимости от ваших предпочтений. Укажите это при заказе в  поле  "Ваше пожелание к заказу...".</div>
+        </div>
+        <div id="cost1_modal12">2399 руб.</div>
+      </div>
+      <div style="clear:both;"></div>
+      <div class="block3_modal float_block_M">
+        <form id="form_012">
+          <div class="float_block3_M">
+            <input class="textbox1 style_textbox12_M" type="text" placeholder="Введите имя..." value=""/>
+          </div>
+          <div class="float_block3_M">
+            <input class="textbox2 style_textbox12_M" type="text" placeholder="Введите телефон..." value=""/>
+          </div>
+          <div>
+            <textarea class="textbox3 style_textbox3_M" placeholder="Ваше пожелание к заказу..." value=""></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="block4_modal float_block_M">
+        <div class="info2_modal">Заказ будет готов в течение суток!</div>
+        <input class="button_modal animate_button_M" type="button" onclick="good_order('form_012')" value="ЗАКАЗАТЬ"/>
+      </div>
+      <div style="clear:both;"></div>
+      <!-- <div class="info3_modal">*Наличие фруктов определяется по сезону. Неучтённые фрукты в стоимость не входят!</div> -->
+    </div>
+    <div class="message_modal">
+      <div class="info_message">Ваш заказ принят!</div>
+      <div class="info_message">Мы свяжемся с Вами в ближайшее время...</div>
+    </div>
+  </div>
+
+	<!-- Modal Window 13 -->
+  <div id="modal13" class="modal_div" > 
+    <span class="modal_close">X</span>
+    <div class="content_modal">
+      <div class="block1_modal float_block_M">
+        <div class="header_modal">Сладкие грёзы</div>
+        <div class="img_modal"><img src="images/img13_modal.png"></div>
+      </div>
+      <div class="block2_modal float_block_M">
+        <div class="description_modal">
+          <div id="description_modal13">
+            <div>
+              <b>Описание:</b> данный букет состоит из 101 чупа-чупса, выполнен в фиолетовом цвете. Размеры: диаметр - 39см, высота - 50см.
+            </div>
+            <div>
+              <b>ДОСТАВКА БЕСПЛАТНО!</b>
+            </div>
+            <div style="clear:both;"></div>
+          </div>
+          <div class="info1_modal13 class_for_js">Состав и цвет букета может меняться в зависимости от ваших предпочтений. Укажите это при заказе в  поле  "Ваше пожелание к заказу...".</div>
+        </div>
+        <div id="cost1_modal13">1999 руб.</div>
+      </div>
+      <div style="clear:both;"></div>
+      <div class="block3_modal float_block_M">
+        <form id="form_013">
+          <div class="float_block3_M">
+            <input class="textbox1 style_textbox12_M" type="text" placeholder="Введите имя..." value=""/>
+          </div>
+          <div class="float_block3_M">
+            <input class="textbox2 style_textbox12_M" type="text" placeholder="Введите телефон..." value=""/>
+          </div>
+          <div>
+            <textarea class="textbox3 style_textbox3_M" placeholder="Ваше пожелание к заказу..." value=""></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="block4_modal float_block_M">
+        <div class="info2_modal">Заказ будет готов в течение суток!</div>
+        <input class="button_modal animate_button_M" type="button" onclick="good_order('form_013')" value="ЗАКАЗАТЬ"/>
+      </div>
+      <div style="clear:both;"></div>
+      <div class="info3_modal"></div>
+    </div>
+    <div class="message_modal">
+      <div class="info_message">Ваш заказ принят!</div>
+      <div class="info_message">Мы свяжемся с Вами в ближайшее время...</div>
+    </div>
+  </div>
+
+	<!-- Modal Window 14 -->
+  <div id="modal14" class="modal_div" > 
+    <span class="modal_close">X</span>
+    <div class="content_modal">
+      <div class="block1_modal float_block_M">
+        <div class="header_modal">Сладкий этюд</div>
+        <div class="img_modal"><img src="images/img14_modal.png"></div>
+      </div>
+      <div class="block2_modal float_block_M">
+        <div class="description_modal">
+          <div id="description_modal14">
+            <div>Состав торта:</div>
+            <div>
+              ·Kinder JOY - 20 шт.<br/>
+              ·Kinder Chocolate - 90 шт.<br/>
+              ·Raffaello - 18 шт.<br/>
+              ·<i>декор, упаковка</i><br/>
+              <b>·ДОСТАВКА БЕСПЛАТНО</b>
+            </div>
+            <div style="clear:both;"></div>
+          </div>
+          <div class="info1_modal14">Торт на пенопластовой основе, т.е. внутри <b>сладости отсутствуют</b>!</div>
+          <div class="info11_modal14 class_for_js">Состав торта может меняться в зависимости от ваших предпочтений. Укажите это при заказе в  поле  "Ваше пожелание к заказу...".</div>
+        </div>
+        <div id="cost1_modal14">3449 руб.</div>
+      </div>
+      <div style="clear:both;"></div>
+      <div class="block3_modal float_block_M">
+        <form id="form_014">
+          <div class="float_block3_M">
+            <input class="textbox1 style_textbox12_M" type="text" placeholder="Введите имя..." value=""/>
+          </div>
+          <div class="float_block3_M">
+            <input class="textbox2 style_textbox12_M" type="text" placeholder="Введите телефон..." value=""/>
+          </div>
+          <div>
+            <textarea class="textbox3 style_textbox3_M" placeholder="Ваше пожелание к заказу..." value=""></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="block4_modal float_block_M">
+        <div class="info2_modal">Заказ будет готов в течение суток!</div>
+        <input class="button_modal animate_button_M" type="button" onclick="good_order('form_014')" value="ЗАКАЗАТЬ"/>
+      </div>
+      <div style="clear:both;"></div>
+      <div class="info3_modal"></div>
+    </div>
+    <div class="message_modal">
+      <div class="info_message">Ваш заказ принят!</div>
+      <div class="info_message">Мы свяжемся с Вами в ближайшее время...</div>
+    </div>
+  </div>
+
+	<!-- Modal Window 15 -->
+  <div id="modal15" class="modal_div" > 
+    <span class="modal_close">X</span>
+    <div class="content_modal">
+      <div class="block1_modal float_block_M">
+        <div class="header_modal">Сказочный бал</div>
+        <div class="img_modal"><img src="images/img15_modal.png"></div>
+      </div>
+      <div class="block2_modal float_block_M">
+        <div class="description_modal">
+          <div id="description_modal15">
+            <div>
+              <b>Описание:</b> данный букет состоит из 55 чупа-чупсов и 5 мишек, выполнен в синем цвете. Размеры: диаметр - 39см, высота - 58см.
+            </div>
+            <div>
+              <b>ДОСТАВКА БЕСПЛАТНО!</b>
+            </div>
+            <div style="clear:both;"></div>
+          </div>
+          <div class="info1_modal15 class_for_js">Состав и цвет букета может меняться в зависимости от ваших предпочтений. Укажите это при заказе в  поле  "Ваше пожелание к заказу...".</div>
+        </div>
+        <div id="cost1_modal15">1999 руб.</div>
+      </div>
+      <div style="clear:both;"></div>
+      <div class="block3_modal float_block_M">
+        <form id="form_015">
+          <div class="float_block3_M">
+            <input class="textbox1 style_textbox12_M" type="text" placeholder="Введите имя..." value=""/>
+          </div>
+          <div class="float_block3_M">
+            <input class="textbox2 style_textbox12_M" type="text" placeholder="Введите телефон..." value=""/>
+          </div>
+          <div>
+            <textarea class="textbox3 style_textbox3_M" placeholder="Ваше пожелание к заказу..." value=""></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="block4_modal float_block_M">
+        <div class="info2_modal">Заказ будет готов в течение суток!</div>
+        <input class="button_modal animate_button_M" type="button" onclick="good_order('form_015')" value="ЗАКАЗАТЬ"/>
+      </div>
+      <div style="clear:both;"></div>
+      <div class="info3_modal"></div>
+    </div>
+    <div class="message_modal">
+      <div class="info_message">Ваш заказ принят!</div>
+      <div class="info_message">Мы свяжемся с Вами в ближайшее время...</div>
+    </div>
+  </div>
+
+	<!-- Modal Window 16 -->
+  <div id="modal16" class="modal_div" > 
+    <span class="modal_close">X</span>
+    <div class="content_modal">
+      <div class="block1_modal float_block_M">
+        <div class="header_modal">Особый случай</div>
+        <div class="img_modal"><img src="images/img16_modal.png"></div>
+      </div>
+      <div class="block2_modal float_block_M">
+        <div class="description_modal">
+          <div id="description_modal16">
+            <div>
+              <b>Описание:</b> данный букет состоит из 101 розы, каждая роза длиной 60см. Букет включает в себя два цвета: белый и красный.
+            </div>
+            <div>
+              <b>ДОСТАВКА БЕСПЛАТНО!</b>
+            </div>
+            <div style="clear:both;"></div>
+          </div>
+          <div class="info1_modal16 class_for_js">Цвет роз, количество и их длину (50-90см) Вы можете выбрать сами, указав это при заказе в  поле  "Ваше пожелание к заказу...".</div>
+        </div>
+        <div id="cost1_modal16">9699 руб.</div>
+        <div id="cost2_modal16">8799 руб.</div>
+      </div>
+      <div style="clear:both;"></div>
+      <div class="block3_modal float_block_M">
+        <form id="form_016">
+          <div class="float_block3_M">
+            <input class="textbox1 style_textbox12_M" type="text" placeholder="Введите имя..." value=""/>
+          </div>
+          <div class="float_block3_M">
+            <input class="textbox2 style_textbox12_M" type="text" placeholder="Введите телефон..." value=""/>
+          </div>
+          <div>
+            <textarea class="textbox3 style_textbox3_M" placeholder="Ваше пожелание к заказу..." value=""></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="block4_modal float_block_M">
+        <div class="info2_modal">Заказ будет готов в течение суток!</div>
+        <input class="button_modal animate_button_M" type="button" onclick="good_order('form_016')" value="ЗАКАЗАТЬ"/>
+      </div>
+      <div style="clear:both;"></div>
+      <div class="info3_modal"></div>
+    </div>
+    <div class="message_modal">
+      <div class="info_message">Ваш заказ принят!</div>
+      <div class="info_message">Мы свяжемся с Вами в ближайшее время...</div>
+    </div>
+  </div>
+
+	<!-- Modal Window 17 -->
+  <div id="modal17" class="modal_div" > 
+    <span class="modal_close">X</span>
+    <div class="content_modal">
+      <div class="block1_modal float_block_M">
+        <div class="header_modal">Царский подарок</div>
+        <div class="img_modal"><img src="images/img17_modal.png"></div>
+      </div>
+      <div class="block2_modal float_block_M">
+        <div class="description_modal">
+          <div id="description_modal17">
+            <div>
+              <b>Описание:</b> данный букет состоит из 201 розы, каждая роза длиной 90см. Букет включает в себя два цвета: белый и красный.
+            </div>
+            <div>
+              <b>ДОСТАВКА БЕСПЛАТНО!</b>
+            </div>
+            <div style="clear:both;"></div>
+          </div>
+          <div class="info1_modal17 class_for_js">Цвет роз, количество и их длину (50-90см) Вы можете выбрать сами, указав это при заказе в  поле  "Ваше пожелание к заказу...".</div>
+        </div>
+        <div id="cost1_modal17">17999 руб.</div>
+      </div>
+      <div style="clear:both;"></div>
+      <div class="block3_modal float_block_M">
+        <form id="form_017">
+          <div class="float_block3_M">
+            <input class="textbox1 style_textbox12_M" type="text" placeholder="Введите имя..." value=""/>
+          </div>
+          <div class="float_block3_M">
+            <input class="textbox2 style_textbox12_M" type="text" placeholder="Введите телефон..." value=""/>
+          </div>
+          <div>
+            <textarea class="textbox3 style_textbox3_M" placeholder="Ваше пожелание к заказу..." value=""></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="block4_modal float_block_M">
+        <div class="info2_modal">Заказ будет готов в течение суток!</div>
+        <input class="button_modal animate_button_M" type="button" onclick="good_order('form_017')" value="ЗАКАЗАТЬ"/>
+      </div>
+      <div style="clear:both;"></div>
+      <div class="info3_modal"></div>
+    </div>
+    <div class="message_modal">
+      <div class="info_message">Ваш заказ принят!</div>
+      <div class="info_message">Мы свяжемся с Вами в ближайшее время...</div>
+    </div>
+  </div>
+
+	<!-- Modal Window 18 -->
+  <div id="modal18" class="modal_div" > 
+    <span class="modal_close">X</span>
+    <div class="content_modal">
+      <div class="block1_modal float_block_M">
+        <div class="header_modal">Тайное свидание</div>
+        <div class="img_modal"><img src="images/img18_modal.png"></div>
+      </div>
+      <div class="block2_modal float_block_M">
+        <div class="description_modal">
+          <div id="description_modal18">
+            <div>
+              <b>Описание:</b> данный букет состоит из 51 бежевой розы, каждая роза длиной 70см.
+            </div>
+            <div>
+              <b>ДОСТАВКА БЕСПЛАТНО!</b>
+            </div>
+            <div style="clear:both;"></div>
+          </div>
+          <div class="info1_modal18 class_for_js">Цвет роз, количество и их длину (50-90см) Вы можете выбрать сами, указав это при заказе в  поле  "Ваше пожелание к заказу...".</div>
+        </div>
+        <div id="cost1_modal18">4849 руб.</div>
+      </div>
+      <div style="clear:both;"></div>
+      <div class="block3_modal float_block_M">
+        <form id="form_018">
+          <div class="float_block3_M">
+            <input class="textbox1 style_textbox12_M" type="text" placeholder="Введите имя..." value=""/>
+          </div>
+          <div class="float_block3_M">
+            <input class="textbox2 style_textbox12_M" type="text" placeholder="Введите телефон..." value=""/>
+          </div>
+          <div>
+            <textarea class="textbox3 style_textbox3_M" placeholder="Ваше пожелание к заказу..." value=""></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="block4_modal float_block_M">
+        <div class="info2_modal">Заказ будет готов в течение суток!</div>
+        <input class="button_modal animate_button_M" type="button" onclick="good_order('form_018')" value="ЗАКАЗАТЬ"/>
+      </div>
+      <div style="clear:both;"></div>
+      <div class="info3_modal"></div>
+    </div>
+    <div class="message_modal">
+      <div class="info_message">Ваш заказ принят!</div>
+      <div class="info_message">Мы свяжемся с Вами в ближайшее время...</div>
+    </div>
+  </div>
+
+  <!-- Modal Window 19 -->
+  <div id="modal19" class="modal_div" > 
+    <span class="modal_close">X</span>
+    <div class="content_modal">
+      <div class="block1_modal float_block_M">
+        <div class="header_modal">Сердце ангела</div>
+        <div class="img_modal"><img src="images/img19_modal.png"></div>
+      </div>
+      <div class="block2_modal float_block_M">
+        <div class="description_modal">
+          <div id="description_modal19">
+            <div>
+              <b>Описание:</b> данная композиция выполнена на каркасе, состоит из 131 белой розы.
+            </div>
+            <div>
+              <b>ДОСТАВКА БЕСПЛАТНО!</b>
+            </div>
+            <div style="clear:both;"></div>
+          </div>
+          <div class="info1_modal19 class_for_js">Цвет роз, количество и их длину (50-90см) Вы можете выбрать сами, указав это при заказе в  поле  "Ваше пожелание к заказу...".</div>
+        </div>
+        <div id="cost1_modal19">10999 руб.</div>
+      </div>
+      <div style="clear:both;"></div>
+      <div class="block3_modal float_block_M">
+        <form id="form_019">
+          <div class="float_block3_M">
+            <input class="textbox1 style_textbox12_M" type="text" placeholder="Введите имя..." value=""/>
+          </div>
+          <div class="float_block3_M">
+            <input class="textbox2 style_textbox12_M" type="text" placeholder="Введите телефон..." value=""/>
+          </div>
+          <div>
+            <textarea class="textbox3 style_textbox3_M" placeholder="Ваше пожелание к заказу..." value=""></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="block4_modal float_block_M">
+        <div class="info2_modal">Заказ будет готов в течение суток!</div>
+        <input class="button_modal animate_button_M" type="button" onclick="good_order('form_019')" value="ЗАКАЗАТЬ"/>
+      </div>
+      <div style="clear:both;"></div>
+      <div class="info3_modal"></div>
+    </div>
+    <div class="message_modal">
+      <div class="info_message">Ваш заказ принят!</div>
+      <div class="info_message">Мы свяжемся с Вами в ближайшее время...</div>
+    </div>
+  </div>
+
+  <!-- Modal Window 20 -->
+  <div id="modal20" class="modal_div" > 
+    <span class="modal_close">X</span>
+    <div class="content_modal">
+      <div class="block1_modal float_block_M">
+        <div class="header_modal">Палитра любви</div>
+        <div class="img_modal"><img src="images/img20_modal.png"></div>
+      </div>
+      <div class="block2_modal float_block_M">
+        <div class="description_modal">
+          <div id="description_modal20">
+            <div>
+              <b>Описание:</b> данный букет состоит из 101 розы, каждая роза длиной 80см. Букет включает в себя три цвета: белый, красный и розовый.
+            </div>
+            <div>
+              <b>ДОСТАВКА БЕСПЛАТНО!</b>
+            </div>
+            <div style="clear:both;"></div>
+          </div>
+          <div class="info1_modal20 class_for_js">Цвет роз, количество и их длину (50-90см) Вы можете выбрать сами, указав это при заказе в  поле  "Ваше пожелание к заказу...".</div>
+        </div>
+        <div id="cost1_modal20">8749 руб.</div>
+      </div>
+      <div style="clear:both;"></div>
+      <div class="block3_modal float_block_M">
+        <form id="form_020">
+          <div class="float_block3_M">
+            <input class="textbox1 style_textbox12_M" type="text" placeholder="Введите имя..." value=""/>
+          </div>
+          <div class="float_block3_M">
+            <input class="textbox2 style_textbox12_M" type="text" placeholder="Введите телефон..." value=""/>
+          </div>
+          <div>
+            <textarea class="textbox3 style_textbox3_M" placeholder="Ваше пожелание к заказу..." value=""></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="block4_modal float_block_M">
+        <div class="info2_modal">Заказ будет готов в течение суток!</div>
+        <input class="button_modal animate_button_M" type="button" onclick="good_order('form_020')" value="ЗАКАЗАТЬ"/>
+      </div>
+      <div style="clear:both;"></div>
+      <div class="info3_modal"></div>
+    </div>
+    <div class="message_modal">
+      <div class="info_message">Ваш заказ принят!</div>
+      <div class="info_message">Мы свяжемся с Вами в ближайшее время...</div>
+    </div>
+  </div>
+
+  <!-- Modal Window 21 -->
+  <div id="modal21" class="modal_div" > 
+    <span class="modal_close">X</span>
+    <div class="content_modal">
+      <div class="block1_modal float_block_M">
+        <div class="header_modal">Розовая мечта</div>
+        <div class="img_modal"><img src="images/img21_modal.png"></div>
+      </div>
+      <div class="block2_modal float_block_M">
+        <div class="description_modal">
+          <div id="description_modal21">
+            <div>
+              <b>Описание:</b> данный букет состоит из 21 розовой розы, каждая роза длиной 60см.
+            </div>
+            <div>
+              <b>ДОСТАВКА БЕСПЛАТНО!</b>
+            </div>
+            <div style="clear:both;"></div>
+          </div>
+          <div class="info1_modal21 class_for_js">Цвет роз, количество и их длину (50-90см) Вы можете выбрать сами, указав это при заказе в  поле  "Ваше пожелание к заказу...".</div>
+        </div>
+        <div id="cost1_modal21">2599 руб.</div>
+      </div>
+      <div style="clear:both;"></div>
+      <div class="block3_modal float_block_M">
+        <form id="form_021">
+          <div class="float_block3_M">
+            <input class="textbox1 style_textbox12_M" type="text" placeholder="Введите имя..." value=""/>
+          </div>
+          <div class="float_block3_M">
+            <input class="textbox2 style_textbox12_M" type="text" placeholder="Введите телефон..." value=""/>
+          </div>
+          <div>
+            <textarea class="textbox3 style_textbox3_M" placeholder="Ваше пожелание к заказу..." value=""></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="block4_modal float_block_M">
+        <div class="info2_modal">Заказ будет готов в течение суток!</div>
+        <input class="button_modal animate_button_M" type="button" onclick="good_order('form_021')" value="ЗАКАЗАТЬ"/>
+      </div>
+      <div style="clear:both;"></div>
+      <div class="info3_modal"></div>
+    </div>
+    <div class="message_modal">
+      <div class="info_message">Ваш заказ принят!</div>
+      <div class="info_message">Мы свяжемся с Вами в ближайшее время...</div>
+    </div>
+  </div>
+
+  <!-- модальное окно для политики конфиденциальности -->
+  <div id="PrivacyPolicy" class="modal_div"> 
+    <div>
+      <span class="modal_close modal_closePP">X</span>
+      <div id="modal_contentPP">
+        <span id="main_spanPP">
+          <span class="headerPP">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</span>
+          <span class="indent1_PP">Настоящая Политика конфиденциальности персональных данных (далее — Политика конфиденциальности) действует в отношении всей информации, которую Интернет-магазин «Rich-Gift»,  расположенный на доменном имени rich-gift.ru, может получить о Пользователе во время использования сайта Интернет-магазина.</span><br/>
+          <span class="headerPP">1. ОПРЕДЕЛЕНИЕ ТЕРМИНОВ</span>
+          <span class="indent1_PP">1.1. В настоящей Политике конфиденциальности используются следующие термины:</span> 
+          <span class="indent2_PP">1.1.1. «Администрация сайта Интернет-магазина (далее — Администрация сайта)» — уполномоченные сотрудники на управление сайтом, действующие от имени «Rich-Gift»,  которые организуют и/или осуществляют обработку персональных данных, а также определяют цели обработки персональных данных, состав персональных данных, подлежащих обработке, действия (операции), совершаемые с персональными данными.</span>
+          <span class="indent2_PP">1.1.2. «Персональные данные» — любая информация, относящаяся к прямо или косвенно определенному или определяемому физическому лицу (субъекту персональных данных).</span>
+          <span class="indent2_PP">1.1.3. «Обработка персональных данных» — любое действие (операция) или совокупность действий (операций), совершаемых с использованием средств автоматизации или без использования таких средств с персональными данными, включая сбор, запись, систематизацию, накопление, хранение, уточнение (обновление, изменение), извлечение, использование, передачу (распространение, предоставление, доступ), обезличивание, блокирование, удаление, уничтожение персональных данных.</span>
+          <span class="indent2_PP">1.1.4. «Конфиденциальность персональных данных» — обязательное для соблюдения Оператором или иным получившим доступ к персональным данным лицам, требование не допускать их распространения без согласия субъекта персональных данных или наличия иного законного основания.</span>
+          <span class="indent2_PP">1.1.5. «Пользователь сайта Интернет-магазина (далее — Пользователь)» — лицо, имеющее доступ к сайту, посредством сети Интернет и использующее сайт Интернет-магазина.</span>
+          <span class="indent2_PP">1.1.6. «IP-адрес» — уникальный сетевой адрес узла в компьютерной сети, построенной по протоколу IP.</span><br/>
+          <span class="headerPP">2. ОБЩИЕ ПОЛОЖЕНИЯ</span>
+          <span class="indent1_PP">2.1. Использование Пользователем сайта Интернет-магазина означает согласие с настоящей Политикой конфиденциальности и условиями обработки персональных данных Пользователя.</span>
+          <span class="indent1_PP">2.2. В случае несогласия с условиями Политики конфиденциальности Пользователь должен прекратить использование сайта Интернет-магазина.</span>
+          <span class="indent1_PP">2.3. Настоящая Политика конфиденциальности применяется только к сайту Интернет-магазина  (rich-gift.ru). Интернет-магазин не контролирует и не несет ответственность за сайты третьих лиц, на которые Пользователь может перейти по ссылкам, доступным на сайте Интернет-магазина.</span>
+          <span class="indent1_PP">2.4. Администрация сайта не проверяет достоверность персональных данных, предоставляемых Пользователем сайта Интернет-магазина.</span><br/>
+          <span class="headerPP">3. ПРЕДМЕТ ПОЛИТИКИ КОНФИДЕНЦИАЛЬНОСТИ</span>
+          <span class="indent1_PP">3.1. Настоящая Политика конфиденциальности устанавливает обязательства Администрации сайта Интернет-магазина по неразглашению и обеспечению режима защиты конфиденциальности персональных данных, которые Пользователь предоставляет по запросу Администрации сайта при регистрации на сайте интернет-магазина, при оформлении заказа для приобретения Товара или при обращении к Администрации сайта Интернет-магазина.</span>
+          <span class="indent1_PP">3.2. Персональные данные, разрешённые к обработке в рамках настоящей Политики конфиденциальности, предоставляются Пользователем путём заполнения регистрационной формы на сайте Интернет-магазина «Rich-Gift» в разделах «Главная», «Каталог», «Заказ», «Контакты» и включают в себя следующую информацию:</span> 
+          <span class="indent2_PP">3.2.1. фамилию, имя Пользователя;</span>
+          <span class="indent2_PP">3.2.2. контактный телефон Пользователя;</span>
+          <span class="indent2_PP">3.2.3. адрес электронной почты (e-mail);</span>
+          <span class="indent2_PP">3.2.4. адрес доставки Товара.</span>
+          <span class="indent1_PP">3.3. Интернет-магазин защищает Данные, которые автоматически передаются в процессе мониторинга сайта Интернет-магазина с целью исправления ошибок и улучшения работы данного сайта:</span>
+          <span class="indent2_PP">3.3.1. IP-адрес Пользователя;</span>
+          <span class="indent2_PP">3.3.2. название уникального поставщика услуг Интернета Пользователя;</span>
+          <span class="indent2_PP">3.3.3. название города, из которого Пользователь получаете доступ к нашему сайту;</span>
+          <span class="indent2_PP">3.3.4. количество кликов Пользователя на сайте;</span>
+          <span class="indent2_PP">3.3.5. дата и время визита Пользователя;</span>
+          <span class="indent2_PP">3.3.6. адрес веб-страницы, с которой Пользователь пришёл на наш сайт;</span>
+          <span class="indent2_PP">3.3.7. страницы, которые просматривал Пользователь на нашем сайте, или время, которое он провел, используя любую часть нашего сайта.</span>
+          <span class="indent1_PP">3.4. Любая иная персональная информация неоговоренная выше (история покупок, используемые браузеры и операционные системы и т.д.) подлежит надежному хранению и нераспространению, за исключением случаев, предусмотренных в п.п. 5.2. и 5.3. настоящей Политики конфиденциальности.</span><br/>
+          <span class="headerPP">4. ЦЕЛИ СБОРА ПЕРСОНАЛЬНОЙ ИНФОРМАЦИИ ПОЛЬЗОВАТЕЛЯ</span>
+          <span class="indent1_PP">4.1. Персональные данные Пользователя Администрация сайта Интернет-магазина может использовать в целях:</span>
+          <span class="indent2_PP">4.1.1. Предоставления Пользователю доступа к персонализированным ресурсам сайта Интернет-магазина.</span>
+          <span class="indent2_PP">4.1.2. Установления с Пользователем обратной связи, включая направление уведомлений, запросов, касающихся использования сайта Интернет-магазина, оказания услуг, обработка запросов и заявок от Пользователя.</span>
+          <span class="indent2_PP">4.1.3. Определения места нахождения Пользователя для обеспечения безопасности, предотвращения мошенничества.</span>
+          <span class="indent2_PP">4.1.4. Подтверждения достоверности и полноты персональных данных, предоставленных Пользователем.</span>
+          <span class="indent2_PP">4.1.5. Создания учетной записи для совершения покупок, если Пользователь дал согласие на создание учетной записи.</span>
+          <span class="indent2_PP">4.1.6. Уведомления Пользователя сайта Интернет-магазина о состоянии Заказа.</span>
+          <span class="indent2_PP">4.1.7. Обработки и получения платежей.</span>
+          <span class="indent2_PP">4.1.8. Предоставления Пользователю эффективной клиентской и технической поддержки при возникновении проблем связанных с использованием сайта Интернет-магазина.</span>
+          <span class="indent2_PP">4.1.9. Предоставления Пользователю с его согласия обновлений продукции, специальных предложений, информации о ценах, новостной рассылки и иных сведений от имени Интернет-магазина или от имени партнеров Интернет-магазина.</span>
+          <span class="indent2_PP">4.1.10. Осуществления рекламной деятельности с согласия Пользователя.</span>
+          <span class="indent2_PP">4.1.11. Предоставления доступа Пользователю на сайты или сервисы партнеров Интернет-магазина с целью получения продуктов, обновлений и услуг.</span><br/>
+          <span class="headerPP">5. СПОСОБЫ И СРОКИ ОБРАБОТКИ ПЕРСОНАЛЬНОЙ ИНФОРМАЦИИ</span>
+          <span class="indent1_PP">5.1. Обработка персональных данных Пользователя осуществляется без ограничения срока, любым законным способом, в том числе в информационных системах персональных данных с использованием средств автоматизации или без использования таких средств.</span> 
+          <span class="indent1_PP">5.2. Пользователь соглашается с тем, что Администрация сайта вправе передавать персональные данные третьим лицам, в частности, курьерским службам, организациям почтовой связи, операторам электросвязи, исключительно в целях выполнения заказа Пользователя, оформленного на сайте Интернет-магазина «Rich-Gift», включая доставку Товара.</span>
+          <span class="indent1_PP">5.3. Персональные данные Пользователя могут быть переданы уполномоченным органам государственной власти Российской Федерации только по основаниям и в порядке, установленным законодательством Российской Федерации.</span>
+          <span class="indent1_PP">5.4. При утрате или разглашении персональных данных Администрация сайта информирует Пользователя об утрате или разглашении персональных данных.</span>
+          <span class="indent1_PP">5.5. Администрация сайта принимает необходимые организационные и технические меры для защиты персональной информации Пользователя от неправомерного или случайного доступа, уничтожения, изменения, блокирования, копирования, распространения, а также от иных неправомерных действий третьих лиц.</span>
+          <span class="indent1_PP">5.6. Администрация сайта совместно с Пользователем принимает все необходимые меры по предотвращению убытков или иных отрицательных последствий, вызванных утратой или разглашением персональных данных Пользователя.</span><br/>
+          <span class="headerPP">6. ОБЯЗАТЕЛЬСТВА СТОРОН</span>
+          <span class="indent1_PP">6.1. Пользователь обязан:</span>
+          <span class="indent2_PP">6.1.1. Предоставить информацию о персональных данных, необходимую для пользования сайтом Интернет-магазина.</span>
+          <span class="indent2_PP">6.1.2. Обновить, дополнить предоставленную информацию о персональных данных в случае изменения данной информации.</span>
+          <span class="indent1_PP">6.2. Администрация сайта обязана:</span>
+          <span class="indent2_PP">6.2.1. Использовать полученную информацию исключительно для целей, указанных в п. 4 настоящей Политики конфиденциальности.</span>
+          <span class="indent2_PP">6.2.2. Обеспечить хранение конфиденциальной информации в тайне, не разглашать без предварительного письменного разрешения Пользователя, а также не осуществлять продажу, обмен, опубликование, либо разглашение иными возможными способами переданных персональных данных Пользователя, за исключением п.п. 5.2. и 5.3. настоящей Политики Конфиденциальности.</span>
+          <span class="indent2_PP">6.2.3. Принимать меры предосторожности для защиты конфиденциальности персональных данных Пользователя согласно порядку, обычно используемого для защиты такого рода информации в существующем деловом обороте.</span>
+          <span class="indent2_PP">6.2.4. Осуществить блокирование персональных данных, относящихся к соответствующему Пользователю, с момента обращения или запроса Пользователя или его законного представителя либо уполномоченного органа по защите прав субъектов персональных данных на период проверки, в случае выявления недостоверных персональных данных или неправомерных действий.</span><br/>
+          <span class="headerPP">7. ОТВЕТСТВЕННОСТЬ СТОРОН</span>
+          <span class="indent1_PP">7.1. Администрация сайта, не исполнившая свои обязательства, несёт ответственность за убытки, понесённые Пользователем в связи с неправомерным использованием персональных данных, в соответствии с законодательством Российской Федерации, за исключением случаев, предусмотренных п.п. 5.2., 5.3. и 7.2. настоящей Политики Конфиденциальности.</span>
+          <span class="indent1_PP">7.2. В случае утраты или разглашения Конфиденциальной информации Администрация сайта не несёт ответственность, если данная конфиденциальная информация:</span>
+          <span class="indent2_PP">7.2.1. Стала публичным достоянием до её утраты или разглашения.</span>
+          <span class="indent2_PP">7.2.2. Была получена от третьей стороны до момента её получения Администрацией сайта.</span>
+          <span class="indent2_PP">7.2.3. Была разглашена с согласия Пользователя.</span><br/>
+          <span class="headerPP">8. РАЗРЕШЕНИЕ СПОРОВ</span>
+          <span class="indent1_PP">8.1. До обращения в суд с иском по спорам, возникающим из отношений между Пользователем сайта Интернет-магазина и Администрацией сайта, обязательным является предъявление претензии (письменного предложения о добровольном урегулировании спора).</span>
+          <span class="indent1_PP">8.2 .Получатель претензии в течение 30 календарных дней со дня получения претензии письменно уведомляет заявителя претензии о результатах рассмотрения претензии.</span> 
+          <span class="indent1_PP">8.3. При недостижении соглашения спор будет передан на рассмотрение в судебный орган в соответствии с действующим законодательством Российской Федерации.</span>
+          <span class="indent1_PP">8.4. К настоящей Политике конфиденциальности и отношениям между Пользователем и Администрацией сайта применяется действующее законодательство Российской Федерации.</span><br/>
+          <span class="headerPP">9. ДОПОЛНИТЕЛЬНЫЕ УСЛОВИЯ</span>
+          <span class="indent1_PP">9.1. Администрация сайта вправе вносить изменения в настоящую Политику конфиденциальности без согласия Пользователя.</span>
+          <span class="indent1_PP">9.2. Новая Политика конфиденциальности вступает в силу с момента ее размещения на сайте Интернет-магазина Rich-Gift, если иное не предусмотрено новой редакцией Политики конфиденциальности.</span>
+          <span class="indent1_PP">9.3. Все предложения или вопросы по настоящей Политике конфиденциальности следует сообщать Администрации сайта Интернет-магазина в разделе «Контакты».</span> 
+          <span class="indent1_PP">9.4. Действующая Политика конфиденциальности размещена на странице по адресу rich-gift.ru.</span></br>
+          <span class="indent1_PP">Последнее обновление: 15 ноября 2015г.</span>
+        </span>
+      </div>
+    </div>
+  </div>
+  <!-- END модальное окно для политики конфиденциальности -->
+
+</div>
+<!-- END Modal Windows -->
+
+<!-- Дрожание и остановка кнопки в модальном окне товара -->
+<script type="text/javascript">
+	// Дрожание кнопки (запуск анимации)
+	var interval_01;
+	ShiverButton_Modal();
+	function ShiverButton_Modal(){
+		interval_01 = window.setInterval( function(){
+			$('.animate_button_M').animate({'margin-left': '54px'}, 60);
+			$('.animate_button_M').animate({'margin-top': '14px'}, 60);
+			$('.animate_button_M').animate({'margin-left': '57px'}, 60);
+			$('.animate_button_M').animate({'margin-top': '16px'}, 60);
+		});
+	}
+	//Остановка анимации
+	$('.animate_button_M').mouseover(function(){
+		$('.animate_button_M').queue("fx", []);
+		clearInterval(interval_01);
+	});
+	//Запуск анимации после остановки
+	$('.animate_button_M').mouseout(function(){
+		ShiverButton_Modal();
+	});
+</script>
+
+
+<!-- При наведении на информационое поле в модальном окне товара цвет фона другого блока меняется-->
+<script type="text/javascript">
+	$('.class_for_js').mouseover(function(){
+		$('.style_textbox3_M').css('background','#FFD6C1');
+	});
+	$('.class_for_js').mouseout(function(){
+		$('.style_textbox3_M').css('background','linear-gradient(#eee, #fff)');
+	});
+</script>
+
+<script type="text/javascript"> 
+    //alert(window.location.hash);
+    switch(window.location.hash){
+    	case '#modal1': Boot_Options_Modal_Window('#modal1'); break;
+    	case '#modal2': Boot_Options_Modal_Window('#modal2'); break;
+    	case '#modal3': Boot_Options_Modal_Window('#modal3'); break;
+    	case '#modal4': Boot_Options_Modal_Window('#modal4'); break;
+    	case '#modal5': Boot_Options_Modal_Window('#modal5'); break;
+    	case '#modal6': Boot_Options_Modal_Window('#modal6'); break;
+    	case '#modal7': Boot_Options_Modal_Window('#modal7'); break;
+    	case '#modal8': Boot_Options_Modal_Window('#modal8'); break;
+    	case '#modal9': Boot_Options_Modal_Window('#modal9'); break;
+    	case '#modal10': Boot_Options_Modal_Window('#modal10'); break;
+    	case '#modal11': Boot_Options_Modal_Window('#modal11'); break;
+    	case '#modal12': Boot_Options_Modal_Window('#modal12'); break;
+      case '#modal13': Boot_Options_Modal_Window('#modal13'); break;
+      case '#modal14': Boot_Options_Modal_Window('#modal14'); break;
+      case '#modal15': Boot_Options_Modal_Window('#modal15'); break;
+      case '#modal16': Boot_Options_Modal_Window('#modal16'); break;
+      case '#modal17': Boot_Options_Modal_Window('#modal17'); break;
+      case '#modal18': Boot_Options_Modal_Window('#modal18'); break;
+      case '#modal19': Boot_Options_Modal_Window('#modal19'); break;
+      case '#modal20': Boot_Options_Modal_Window('#modal20'); break;
+      case '#modal21': Boot_Options_Modal_Window('#modal21'); break;
+    };
+
+	function Boot_Options_Modal_Window(hash_code){
+		var overlay = $('#overlay');
+		$(hash_code).css('margin','55px auto');
+        $('#slideleft').css('display', 'none');
+		$('#slideright').css('display', 'none');
+
+        overlay.fadeIn(350, 
+            function(){ 
+                $(hash_code) 
+                    .css('display', 'block')
+                    // .animate({opacity: 1, left:'50%', top: '50%'}, 300); 
+                    .animate({opacity: 1, margin:'55px auto'}, 300); 
+        });
+	};
+
+</script>
+<!-- BEGIN JIVOSITE CODE {literal} -->
+<script type='text/javascript'>
+(function(){ var widget_id = 'VTIYfc0ktB';
+var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);})();</script>
+<!-- {/literal} END JIVOSITE CODE -->
+
+</body>
+</html>

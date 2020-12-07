@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Allow: /info_fruit.html
+Allow: /info_vegetables.html
+Allow: /info_kinders.html
+Allow: /info_flowers.html
+Sitemap:  http://rich-gift.ru/sitemap.xml
